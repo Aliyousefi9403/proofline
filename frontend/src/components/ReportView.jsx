@@ -12,10 +12,16 @@ function buildSegments(text, marks, injections) {
   for (let i = 0; i < sorted.length - 1; i += 1) {
     const [start, end] = [sorted[i], sorted[i + 1]];
     if (start === end) continue;
+    const mark = marks.find((m) => m.start <= start && m.end >= end) || null;
+    const previous = segments[segments.length - 1];
+    if (mark && previous && previous.mark === mark) {
+      previous.text += text.slice(start, end); // one number is one button, whatever crosses it
+      continue;
+    }
     segments.push({
       start,
       text: text.slice(start, end),
-      mark: marks.find((m) => m.start <= start && m.end >= end) || null,
+      mark,
       injected: injections.some((x) => x.start <= start && x.end >= end),
     });
   }

@@ -111,7 +111,7 @@ _INJECTION_PATTERNS: tuple[tuple[str, str], ...] = (
     ("rewrite", r"\b(?:record|treat|read|interpret|extract|log|use)\s+(?:the\s+)?[\w\s]{1,30}\s+as\s+\$?\d"),
 )
 _INJECTION_RES = tuple((name, re.compile(pattern, re.IGNORECASE)) for name, pattern in _INJECTION_PATTERNS)
-_SENTENCE_RE = re.compile(r"[^.!?\n]+[.!?]?")
+_SENTENCE_RE = re.compile(r"(?:[^.!?\n]|\.(?=\d))+[.!?]?")  # a decimal point does not end a sentence
 
 
 def find_injections(text: str) -> list[dict]:

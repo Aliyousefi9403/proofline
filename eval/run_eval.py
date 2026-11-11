@@ -194,6 +194,9 @@ def main(argv: list[str]) -> int:
     naive_clean = run_parallel(naive.naive_check, [d["text"] for d, _ in pairs], workers=workers, label="naive clean")
     naive_injected = run_parallel(naive.naive_check, [m["text"] for m in injected], workers=workers, label="naive injected")
 
+    failed = sum(1 for r in [*clean_results, *injected_results, *naive_clean, *naive_injected] if isinstance(r, Exception))
+    if failed:
+        print(f"  {failed} calls failed; re-run to fill them in (finished calls are cached)")
     clean_scores = [_score(r, None, None) for _, r in pairs]
     rows = []
     for mutation, result, review in zip(injected, injected_results, naive_injected):
@@ -233,6 +236,7 @@ def main(argv: list[str]) -> int:
         "provider": llm.provider(),
         "analyses": len(pairs),
         "injected": total,
+        "failed_runs": failed,
         "by_error_type": by_type,
         "overall": {
             "catch_rate": rate(caught_all, total),

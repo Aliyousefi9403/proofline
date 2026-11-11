@@ -73,18 +73,32 @@ export default function VerifyTab({ meta, draft, onDraftUsed }) {
   const [selected, setSelected] = useState(null);
   const [busy, setBusy] = useState(null);
   const [error, setError] = useState(null);
+  const [autoRun, setAutoRun] = useState(false);
 
   const metricLabels = useMemo(
     () => Object.fromEntries((meta?.metrics || []).map((m) => [m.key, m.label])),
     [meta]
   );
 
+  // Deep link for demos: /?sample=poisoned&run=1 loads a sample and verifies it straight away.
   useEffect(() => {
     api.samples().then((data) => {
       setSamples(data.samples);
-      setText((current) => current || data.samples.find((s) => s.id === "clean")?.text || "");
+      const params = new URLSearchParams(window.location.search);
+      const wanted = data.samples.find((s) => s.id === params.get("sample"));
+      const initial = wanted || data.samples.find((s) => s.id === "clean");
+      setText((current) => current || initial?.text || "");
+      if (wanted && params.get("run")) setAutoRun(true);
     }).catch(() => setSamples([]));
   }, []);
+
+  useEffect(() => {
+    if (autoRun && text) {
+      setAutoRun(false);
+      verify();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoRun, text]);
 
   useEffect(() => {
     if (draft) {
