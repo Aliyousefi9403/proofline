@@ -35,6 +35,29 @@ def canonical(obj) -> str:
     return json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
 
 
+def _portable(obj):
+    """Numbers as fixed-format strings, so 391000000000.0 and 391000000000 hash the same."""
+    if isinstance(obj, bool) or obj is None or isinstance(obj, str):
+        return obj
+    if isinstance(obj, (int, float)):
+        return format(float(obj), ".15g")
+    if isinstance(obj, dict):
+        return {key: _portable(value) for key, value in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [_portable(value) for value in obj]
+    return obj
+
+
+def portable(obj) -> str:
+    """Canonical form that survives a JSON round trip through another language.
+
+    A certificate travels to the browser and back. JavaScript writes 391000000000.0
+    as 391000000000, which would change a byte-level hash. Certificates are signed
+    over this form instead. The audit log never leaves Python and keeps ``canonical``.
+    """
+    return canonical(_portable(obj))
+
+
 def sha256_hex(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
@@ -156,7 +179,7 @@ def load_signing_key() -> bytes:
 
 
 def sign(body: dict, key: bytes | None = None) -> str:
-    return hmac.new(key or load_signing_key(), canonical(body).encode("utf-8"), hashlib.sha256).hexdigest()
+    return hmac.new(key or load_signing_key(), portable(body).encode("utf-8"), hashlib.sha256).hexdigest()
 
 
 # --------------------------------------------------------------------------
@@ -200,7 +223,7 @@ def issue_certificate(*, status: str, report: dict, checks: list[dict], unchecke
         "unchecked": unchecked,
         "log_range": {"first_index": first_index, "last_index": len(log) - 1},
     }
-    certificate_id = sha256_hex(canonical(body))
+    certificate_id = sha256_hex(portable(body))
     anchor = log.append({
         "type": "certificate",
         "report_sha256": report["sha256"],
@@ -232,7 +255,7 @@ def replay_certificate(certificate: dict, store: FactStore, log: AuditLog, text:
     body = certificate.get("body") or {}
     signature = (certificate.get("signature") or {}).get("value", "")
     signature_valid = hmac.compare_digest(signature, sign(body)) if body else False
-    id_valid = certificate.get("certificate_id") == sha256_hex(canonical(body)) if body else False
+    id_valid = certificate.get("certificate_id") == sha256_hex(portable(body)) if body else False
 
     anchor = certificate.get("anchor") or {}
     entries = log.entries()

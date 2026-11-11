@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { api } from "../api.js";
 import { REPORT_STATUS } from "../status.js";
 import { Badge, Button, Icon } from "./ui.jsx";
@@ -16,6 +16,11 @@ export default function CertificateCard({ certificate, text }) {
   const [replay, setReplay] = useState(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(null);
+  // Deep link for demos: &replay=1 presses Replay as soon as a certificate arrives.
+  useEffect(() => {
+    if (certificate && new URLSearchParams(window.location.search).get("replay")) runReplay();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [certificate?.certificate_id]);
   if (!certificate) return null;
   const body = certificate.body;
   const meta = REPORT_STATUS[body.status] || REPORT_STATUS.EMPTY;

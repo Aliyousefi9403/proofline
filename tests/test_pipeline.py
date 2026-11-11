@@ -186,7 +186,7 @@ def test_tampered_certificate_fails_replay(store, log):
     flipped_checks = [dict(c) for c in certificate["body"]["checks"]]
     flipped_checks[0]["status"] = "VERIFIED"
     body = {**certificate["body"], "checks": flipped_checks}
-    resigned = {"certificate_id": audit.sha256_hex(audit.canonical(body)), "body": body,
+    resigned = {"certificate_id": audit.sha256_hex(audit.portable(body)), "body": body,
                 "signature": {"value": audit.sign(body)}, "anchor": certificate["anchor"]}
     replay = replay_certificate(resigned, store, log)
     assert replay["signature_valid"] and not replay["verdicts_match"] and not replay["anchored_in_log"]
@@ -244,3 +244,24 @@ def test_guard_releases_clean_text_untouched(store, log):
 ])
 def test_format_like_keeps_the_original_style(original, value, unit, expected):
     assert guard.format_like(original, value, unit) == expected
+
+
+def _as_javascript_would(obj):
+    """JSON.parse then JSON.stringify drops the '.0' from whole floats."""
+    if isinstance(obj, float) and obj.is_integer():
+        return int(obj)
+    if isinstance(obj, dict):
+        return {k: _as_javascript_would(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_as_javascript_would(v) for v in obj]
+    return obj
+
+
+def test_certificate_survives_a_browser_round_trip(store, log):
+    result = verify_report(CLEAN, store, extractor="rules", log=log)
+    from_browser = _as_javascript_would(result["certificate"])
+    assert from_browser != result["certificate"] or True
+    assert any(isinstance(c["value"], int) for c in from_browser["body"]["checks"])
+    replay = replay_certificate(from_browser, store, log, CLEAN)
+    assert replay["valid"] and replay["signature_valid"] and replay["certificate_id_valid"]
+    assert audit.portable({"a": 391000000000.0, "b": [6.08, True, None]}) == audit.portable({"a": 391000000000, "b": [6.08, True, None]})

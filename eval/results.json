@@ -1,23 +1,24 @@
 {
- "generated_at": "2026-11-11T16:19:23Z",
+ "generated_at": "2026-11-11T21:10:30Z",
  "model": "claude-opus-5-5",
  "provider": "claude-cli",
  "analyses": 40,
  "injected": 160,
- "failed_runs": 190,
+ "failed_runs": 0,
  "by_error_type": [
   {
    "id": "value",
    "label": "Value changed by 5 to 30%",
    "expected": "WRONG_VALUE",
    "n": 40,
+   "naive_n": 40,
    "caught": 40,
    "catch_rate": 1.0,
    "flagged_amber": 0,
    "missed": 0,
    "exact_diagnosis": 38,
    "exact_rate": 0.95,
-   "naive_caught": 1,
+   "naive_caught": 40,
    "naive_catch_rate": 1.0
   },
   {
@@ -25,49 +26,53 @@
    "label": "Figure from the wrong year",
    "expected": "WRONG_PERIOD",
    "n": 40,
-   "caught": 38,
-   "catch_rate": 0.95,
+   "naive_n": 40,
+   "caught": 39,
+   "catch_rate": 0.975,
    "flagged_amber": 1,
-   "missed": 1,
-   "exact_diagnosis": 38,
-   "exact_rate": 0.95,
-   "naive_caught": 0,
-   "naive_catch_rate": 0.0
+   "missed": 0,
+   "exact_diagnosis": 39,
+   "exact_rate": 0.975,
+   "naive_caught": 40,
+   "naive_catch_rate": 1.0
   },
   {
    "id": "scale",
    "label": "Millions swapped with billions",
    "expected": "SCALE_ERROR",
    "n": 40,
+   "naive_n": 40,
    "caught": 40,
    "catch_rate": 1.0,
    "flagged_amber": 0,
    "missed": 0,
    "exact_diagnosis": 40,
    "exact_rate": 1.0,
-   "naive_caught": 0,
-   "naive_catch_rate": 0.0
+   "naive_caught": 40,
+   "naive_catch_rate": 1.0
   },
   {
    "id": "growth",
    "label": "Growth rate changed",
    "expected": "WRONG_VALUE",
    "n": 40,
+   "naive_n": 40,
    "caught": 40,
    "catch_rate": 1.0,
    "flagged_amber": 0,
    "missed": 0,
    "exact_diagnosis": 38,
    "exact_rate": 0.95,
-   "naive_caught": 0,
-   "naive_catch_rate": 0.0
+   "naive_caught": 40,
+   "naive_catch_rate": 1.0
   }
  ],
  "overall": {
-  "catch_rate": 0.9875,
-  "flagged_rate": 0.9938,
-  "missed": 1,
-  "naive_catch_rate": 1.0
+  "catch_rate": 0.9938,
+  "flagged_rate": 1.0,
+  "missed": 0,
+  "naive_catch_rate": 1.0,
+  "naive_judged": 160
  },
  "false_alarms": {
   "untouched_numbers": 2880,
@@ -78,26 +83,18 @@
   "clean_numbers": 608,
   "clean_red_flags": 0,
   "clean_reports_certified": 40,
-  "naive_flagged_clean": 0,
-  "naive_clean_total": 9,
-  "naive_false_alarm_rate": 0.0,
+  "naive_flagged_clean": 2,
+  "naive_clean_total": 40,
+  "naive_false_alarm_rate": 0.05,
   "examples": []
  },
  "timing": {
   "reports_timed": 158,
   "avg_extract_ms": 10998.6,
-  "avg_check_ms": 2.974,
+  "avg_check_ms": 4.887,
   "avg_numbers_per_report": 15.2
  },
  "misses": [
-  {
-   "doc_id": "NVDA-FY2024-profitability-year",
-   "error": "year",
-   "original": "$27.0 billion",
-   "replacement": "$26.9 billion",
-   "outcome": "MISSED",
-   "metric": "revenue"
-  },
   {
    "doc_id": "TSLA-FY2023-profitability-year",
    "error": "year",

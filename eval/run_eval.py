@@ -230,6 +230,9 @@ def main(argv: list[str]) -> int:
     fresh = [s for s in clean_scores + rows if not s["cached"]]
     naive_clean_ok = [r for r in naive_clean if not isinstance(r, Exception)]
     naive_judged = [r for r in rows if r["naive_flagged"] is not None]
+    previous_timing = {}
+    if not fresh and RESULTS_PATH.exists():
+        previous_timing = json.loads(RESULTS_PATH.read_text(encoding="utf-8")).get("timing", {})
     payload = {
         "generated_at": now(),
         "model": llm.default_model(),
@@ -260,8 +263,9 @@ def main(argv: list[str]) -> int:
             "examples": [fr for s in clean_scores for fr in s["false_reds"]][:20],
         },
         "timing": {
-            "reports_timed": len(fresh),
-            "avg_extract_ms": round(sum(s["extract_ms"] for s in fresh) / len(fresh), 1) if fresh else None,
+            "reports_timed": len(fresh) if fresh else previous_timing.get("reports_timed", 0),
+            "avg_extract_ms": round(sum(s["extract_ms"] for s in fresh) / len(fresh), 1) if fresh
+            else previous_timing.get("avg_extract_ms"),
             "avg_check_ms": round(sum(s["check_ms"] for s in clean_scores + rows) / max(1, len(clean_scores) + len(rows)), 3),
             "avg_numbers_per_report": round(clean_numbers / max(1, len(pairs)), 1),
         },
