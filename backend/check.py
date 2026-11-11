@@ -25,7 +25,9 @@ class Policy:
 
     pct_points: float = 0.5            # growth and margin claims: percentage points
     relative: float = 0.005            # used when the stated precision is unknown
-    truncation_max_step: float = 0.02  # accept truncation only for figures with >= 2-3 significant digits
+    # Optional leniency: also accept a truncated figure ("94.9" for 94.97) when the last digit is at most
+    # this share of the figure. Off by default: a truncated figure can equal a neighbouring year's value.
+    truncation_max_step: float = 0.0
 
     def to_dict(self) -> dict:
         return {
@@ -87,8 +89,8 @@ def matches(claimed: float, actual: float, quantum: float | None, kind: str, pol
 
     Percentages: within ``policy.pct_points``. Everything else: the filed
     figure must round to the claimed one at the precision the text states
-    ("$391bn" accepts 390.5 to 391.5bn). Truncation is accepted for figures
-    stated with enough digits. With no known precision, 0.5% relative.
+    ("$391bn" accepts 390.5 to 391.5bn). With no known precision, 0.5%
+    relative. A policy can opt in to accepting truncated figures as well.
     """
     if kind in PCT_KINDS:
         return abs(claimed - actual) <= policy.pct_points + 1e-9

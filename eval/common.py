@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import sys
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -11,6 +12,7 @@ sys.path.insert(0, str(ROOT))
 
 from backend import config  # noqa: E402
 from backend.edgar import FactStore  # noqa: E402
+from backend.llm import LLMRateLimited  # noqa: E402
 from backend.models import AMBER, RED  # noqa: E402
 
 config.load_dotenv()
@@ -29,8 +31,21 @@ def run_parallel(fn, items: list, *, workers: int = DEFAULT_WORKERS, label: str 
     """Run ``fn`` over ``items`` in threads, keeping order. Failures are returned as exceptions."""
     results: list = [None] * len(items)
     started = time.time()
+    limit_hit = threading.Event()
+
+    def guarded(item):
+        if limit_hit.is_set():
+            raise LLMRateLimited("skipped: the usage limit was reached earlier in this run")
+        try:
+            return fn(item)
+        except LLMRateLimited:
+            if not limit_hit.is_set():
+                limit_hit.set()
+                print("  usage limit reached: skipping the remaining calls. Re-run later; finished calls are cached.", flush=True)
+            raise
+
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(fn, item): index for index, item in enumerate(items)}
+        futures = {pool.submit(guarded, item): index for index, item in enumerate(items)}
         for done, future in enumerate(as_completed(futures), start=1):
             index = futures[future]
             try:

@@ -1,0 +1,710 @@
+[
+ {
+  "id": "q01",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Apple's revenue change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q02",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Apple's net income change from fiscal 2022 to fiscal 2024? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q03",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Apple's operating income change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q04",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Microsoft's revenue change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q05",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Microsoft's net income change from fiscal 2022 to fiscal 2024? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q06",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Microsoft's operating income change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q07",
+  "category": "multi_year_growth",
+  "question": "By what percentage did NVIDIA's revenue change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q08",
+  "category": "multi_year_growth",
+  "question": "By what percentage did NVIDIA's net income change from fiscal 2022 to fiscal 2024? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q09",
+  "category": "multi_year_growth",
+  "question": "By what percentage did NVIDIA's operating income change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q10",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Tesla's revenue change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q11",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Tesla's net income change from fiscal 2022 to fiscal 2024? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q12",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Tesla's operating income change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q13",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Amazon's revenue change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q14",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Amazon's net income change from fiscal 2022 to fiscal 2024? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q15",
+  "category": "multi_year_growth",
+  "question": "By what percentage did Amazon's operating income change from fiscal 2023 to fiscal 2025? State the figure for each of the two years and the percentage change.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q16",
+  "category": "margins",
+  "question": "What were Apple's gross margin and operating margin in fiscal 2023? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q17",
+  "category": "margins",
+  "question": "What were Apple's gross margin and operating margin in fiscal 2024? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q18",
+  "category": "margins",
+  "question": "What were Apple's gross margin and operating margin in fiscal 2025? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q19",
+  "category": "margins",
+  "question": "What were Microsoft's gross margin and operating margin in fiscal 2023? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q20",
+  "category": "margins",
+  "question": "What were Microsoft's gross margin and operating margin in fiscal 2024? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q21",
+  "category": "margins",
+  "question": "What were Microsoft's gross margin and operating margin in fiscal 2025? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q22",
+  "category": "margins",
+  "question": "What were NVIDIA's gross margin and operating margin in fiscal 2023? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q23",
+  "category": "margins",
+  "question": "What were NVIDIA's gross margin and operating margin in fiscal 2024? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q24",
+  "category": "margins",
+  "question": "What were NVIDIA's gross margin and operating margin in fiscal 2025? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q25",
+  "category": "margins",
+  "question": "What were Tesla's gross margin and operating margin in fiscal 2023? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q26",
+  "category": "margins",
+  "question": "What were Tesla's gross margin and operating margin in fiscal 2024? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q27",
+  "category": "margins",
+  "question": "What were Tesla's gross margin and operating margin in fiscal 2025? Give revenue, gross profit and operating income for that year as well.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q28",
+  "category": "cross_company",
+  "question": "Compare Apple and Microsoft on revenue for fiscal 2024. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2024
+   },
+   {
+    "ticker": "MSFT",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q29",
+  "category": "cross_company",
+  "question": "Compare Amazon and Apple on revenue for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2025
+   },
+   {
+    "ticker": "AAPL",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q30",
+  "category": "cross_company",
+  "question": "Compare NVIDIA and Tesla on net income for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2025
+   },
+   {
+    "ticker": "TSLA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q31",
+  "category": "cross_company",
+  "question": "Compare Microsoft and Amazon on operating income for fiscal 2024. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2024
+   },
+   {
+    "ticker": "AMZN",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q32",
+  "category": "cross_company",
+  "question": "Compare Apple and NVIDIA on net income for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2025
+   },
+   {
+    "ticker": "NVDA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q33",
+  "category": "cross_company",
+  "question": "Compare Tesla and NVIDIA on revenue for fiscal 2024. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2024
+   },
+   {
+    "ticker": "NVDA",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q34",
+  "category": "cross_company",
+  "question": "Compare Microsoft and Apple on r&d expense for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2025
+   },
+   {
+    "ticker": "AAPL",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q35",
+  "category": "cross_company",
+  "question": "Compare Amazon and Microsoft on net income for fiscal 2023. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2023
+   },
+   {
+    "ticker": "MSFT",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q36",
+  "category": "cross_company",
+  "question": "Compare NVIDIA and Microsoft on gross profit for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2025
+   },
+   {
+    "ticker": "MSFT",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q37",
+  "category": "cross_company",
+  "question": "Compare Apple and Amazon on cash and cash equivalents for fiscal 2024. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2024
+   },
+   {
+    "ticker": "AMZN",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q38",
+  "category": "cross_company",
+  "question": "Compare Tesla and Apple on r&d expense for fiscal 2024. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2024
+   },
+   {
+    "ticker": "AAPL",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q39",
+  "category": "cross_company",
+  "question": "Compare Amazon and NVIDIA on total assets for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2025
+   },
+   {
+    "ticker": "NVDA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q40",
+  "category": "fiscal_calendar",
+  "question": "Microsoft's fiscal year ends on June 30. What revenue and net income did it report for the fiscal year ended June 30, 2023, and by what percentage did revenue change from the prior fiscal year?",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q41",
+  "category": "fiscal_calendar",
+  "question": "NVIDIA's fiscal 2023 ended in late January 2023. What revenue and net income did it report for fiscal 2023, and what was revenue growth over fiscal 2022?",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q42",
+  "category": "fiscal_calendar",
+  "question": "Apple's fiscal year ends in late September. What were its revenue, net income and total assets for fiscal 2023?",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q43",
+  "category": "fiscal_calendar",
+  "question": "Microsoft's fiscal year ends on June 30. What revenue and net income did it report for the fiscal year ended June 30, 2024, and by what percentage did revenue change from the prior fiscal year?",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q44",
+  "category": "fiscal_calendar",
+  "question": "NVIDIA's fiscal 2024 ended in late January 2024. What revenue and net income did it report for fiscal 2024, and what was revenue growth over fiscal 2023?",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q45",
+  "category": "fiscal_calendar",
+  "question": "Apple's fiscal year ends in late September. What were its revenue, net income and total assets for fiscal 2024?",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q46",
+  "category": "fiscal_calendar",
+  "question": "Microsoft's fiscal year ends on June 30. What revenue and net income did it report for the fiscal year ended June 30, 2025, and by what percentage did revenue change from the prior fiscal year?",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q47",
+  "category": "fiscal_calendar",
+  "question": "NVIDIA's fiscal 2025 ended in late January 2025. What revenue and net income did it report for fiscal 2025, and what was revenue growth over fiscal 2024?",
+  "filings": [
+   {
+    "ticker": "NVDA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q48",
+  "category": "fiscal_calendar",
+  "question": "Apple's fiscal year ends in late September. What were its revenue, net income and total assets for fiscal 2025?",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q49",
+  "category": "per_share",
+  "question": "What was Apple's diluted EPS in fiscal 2023 and in fiscal 2022, and what was the percentage change? Also give net income for fiscal 2023.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q50",
+  "category": "per_share",
+  "question": "What was Apple's diluted EPS in fiscal 2024 and in fiscal 2023, and what was the percentage change? Also give net income for fiscal 2024.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q51",
+  "category": "per_share",
+  "question": "What was Apple's diluted EPS in fiscal 2025 and in fiscal 2024, and what was the percentage change? Also give net income for fiscal 2025.",
+  "filings": [
+   {
+    "ticker": "AAPL",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q52",
+  "category": "per_share",
+  "question": "What was Microsoft's diluted EPS in fiscal 2023 and in fiscal 2022, and what was the percentage change? Also give net income for fiscal 2023.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q53",
+  "category": "per_share",
+  "question": "What was Microsoft's diluted EPS in fiscal 2024 and in fiscal 2023, and what was the percentage change? Also give net income for fiscal 2024.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q54",
+  "category": "per_share",
+  "question": "What was Microsoft's diluted EPS in fiscal 2025 and in fiscal 2024, and what was the percentage change? Also give net income for fiscal 2025.",
+  "filings": [
+   {
+    "ticker": "MSFT",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q55",
+  "category": "per_share",
+  "question": "What was Tesla's diluted EPS in fiscal 2023 and in fiscal 2022, and what was the percentage change? Also give net income for fiscal 2023.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q56",
+  "category": "per_share",
+  "question": "What was Tesla's diluted EPS in fiscal 2024 and in fiscal 2023, and what was the percentage change? Also give net income for fiscal 2024.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q57",
+  "category": "per_share",
+  "question": "What was Tesla's diluted EPS in fiscal 2025 and in fiscal 2024, and what was the percentage change? Also give net income for fiscal 2025.",
+  "filings": [
+   {
+    "ticker": "TSLA",
+    "year": 2025
+   }
+  ]
+ },
+ {
+  "id": "q58",
+  "category": "per_share",
+  "question": "What was Amazon's diluted EPS in fiscal 2023 and in fiscal 2022, and what was the percentage change? Also give net income for fiscal 2023.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2023
+   }
+  ]
+ },
+ {
+  "id": "q59",
+  "category": "per_share",
+  "question": "What was Amazon's diluted EPS in fiscal 2024 and in fiscal 2023, and what was the percentage change? Also give net income for fiscal 2024.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2024
+   }
+  ]
+ },
+ {
+  "id": "q60",
+  "category": "per_share",
+  "question": "What was Amazon's diluted EPS in fiscal 2025 and in fiscal 2024, and what was the percentage change? Also give net income for fiscal 2025.",
+  "filings": [
+   {
+    "ticker": "AMZN",
+    "year": 2025
+   }
+  ]
+ }
+]

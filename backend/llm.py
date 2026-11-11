@@ -46,6 +46,10 @@ class LLMError(RuntimeError):
     """The backend was reached but the call failed."""
 
 
+class LLMRateLimited(LLMError):
+    """The account's usage or rate limit was reached. Retrying at once will not help."""
+
+
 @dataclass(frozen=True)
 class LLMResult:
     data: Any            # parsed JSON when a schema was given, else the text
@@ -143,7 +147,7 @@ def _call_anthropic(system: str, user: str, model: str, schema: dict | None, eff
     except anthropic.AuthenticationError as exc:
         raise LLMUnavailable("Anthropic API key was rejected.") from exc
     except anthropic.RateLimitError as exc:
-        raise LLMError("Anthropic API rate limit reached. Try again shortly.") from exc
+        raise LLMRateLimited("Anthropic API rate limit reached. Try again shortly.") from exc
     except anthropic.APIStatusError as exc:
         raise LLMError(f"Anthropic API error {exc.status_code}: {exc.message}") from exc
     except anthropic.APIConnectionError as exc:
@@ -190,7 +194,10 @@ def _call_cli(system: str, user: str, model: str, schema: dict | None, effort: s
         detail = (completed.stderr or completed.stdout or "").strip()[:300]
         raise LLMError(f"The claude CLI returned no JSON. {detail}") from exc
     if payload.get("is_error"):
-        raise LLMError(f"The claude CLI reported an error: {str(payload.get('result'))[:300]}")
+        message = f"The claude CLI reported an error: {str(payload.get('result'))[:300]}"
+        if "limit" in message.lower():
+            raise LLMRateLimited(message)
+        raise LLMError(message)
     if schema is None:
         return payload.get("result") or ""
     structured = payload.get("structured_output")
@@ -236,6 +243,8 @@ def complete(
             else:
                 data = _call_cli(system, user, model, schema, effort)
             break
+        except LLMRateLimited:
+            raise
         except LLMError as exc:
             last_error = exc
             if attempt == retries:

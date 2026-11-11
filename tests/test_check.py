@@ -18,14 +18,14 @@ def run(store, claim, quantum=None, **kw):
 @pytest.mark.parametrize("claimed,actual,quantum,ok", [
     (391e9, 391.035e9, 1e9, True),      # "$391bn" accepts 390.5 to 391.5bn
     (391e9, 391.49e9, 1e9, True),
-    (391e9, 391.6e9, 1e9, True),        # truncation of a 3-digit figure
+    (391e9, 391.6e9, 1e9, False),       # 391.6 rounds to 392: truncation is not accepted by default
     (391e9, 392.1e9, 1e9, False),
     (391e9, 390.4e9, 1e9, False),
     (391.0e9, 391.035e9, 1e8, True),
     (391.1e9, 391.035e9, 1e8, False),
-    (94.9e9, 94.97e9, 1e8, True),       # truncated, fine-grained
+    (94.9e9, 94.97e9, 1e8, False),
     (2e12, 2.4e12, 1e12, True),         # rounds to 2 trillion
-    (2e12, 2.9e12, 1e12, False),        # coarse figure: truncation not accepted
+    (2e12, 2.9e12, 1e12, False),
     (6.08, 6.08, 0.01, True),
     (6.08, 6.11, 0.01, False),
     (100.0, 100.4, None, True),         # no stated precision: 0.5%
@@ -45,7 +45,11 @@ def test_percentage_tolerance_is_half_a_point(claimed, actual, ok):
 def test_policy_is_configurable_and_serialisable():
     strict = Policy(pct_points=0.1)
     assert not matches(2.5, 2.02, 0.1, "growth_pct", strict)
-    assert DEFAULT_POLICY.to_dict() == {"pct_points": 0.5, "relative": 0.005, "truncation_max_step": 0.02}
+    assert DEFAULT_POLICY.to_dict() == {"pct_points": 0.5, "relative": 0.005, "truncation_max_step": 0.0}
+    lenient = Policy(truncation_max_step=0.02)
+    assert matches(94.9e9, 94.97e9, 1e8, "absolute", lenient)      # truncated, fine-grained figure
+    assert not matches(2e12, 2.9e12, 1e12, "absolute", lenient)    # coarse figure: still rejected
+    assert not matches(94.9e9, 95.07e9, 1e8, "absolute", lenient)
 
 
 # ---- absolute claims ---------------------------------------------------------

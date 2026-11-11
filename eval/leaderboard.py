@@ -154,6 +154,10 @@ def main(argv: list[str]) -> int:
         if isinstance(outcome, Exception):
             print(f"  FAILED {task['model']} {task['mode']} {task['question']['id']}: {outcome}")
 
+    if not rows:
+        print("No answers were scored (LLM unavailable or usage limit reached). Nothing written.")
+        return 1
+
     table = []
     for model in models:
         for mode in MODES:
@@ -206,6 +210,7 @@ def main(argv: list[str]) -> int:
         "modes": list(MODES),
         "categories": CATEGORIES,
         "failed_runs": failed,
+        "planned_answers": len(tasks),
         "overall": {mode["id"]: summarise([r for r in rows if r["mode"] == mode["id"]]) for mode in MODES},
         "table": table,
         "failures": saved,

@@ -1,0 +1,1 @@
+{"data": {"accurate": true, "issues": [], "summary": "All figures match Apple's FY2023 and FY2022 10-K data: revenue, net income, operating cash flow, total assets, total liabilities and cash. The calculated percentage declines are correct, and the conclusions are supported."}, "model": "claude-opus-5-5", "provider": "claude-cli", "created": "2026-11-11T16:12:48Z"}

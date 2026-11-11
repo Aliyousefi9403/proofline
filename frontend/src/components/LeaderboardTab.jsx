@@ -24,6 +24,12 @@ export default function LeaderboardTab({ onOpen }) {
         with the 10-K financial statements supplied. Every answer was scored by ProofLine against the filings. No human
         labelling, and no staged examples.
       </p>
+      {data.failed_runs > 0 && (
+        <Notice tone="warn" title="Partial run">
+          {data.failed_runs} of {data.planned_answers} answers are missing (usage limit). Re-run{" "}
+          <code>uv run python eval/leaderboard.py</code> to fill them in; finished calls are cached.
+        </Notice>
+      )}
       <div className="stats">
         <Stat value={percent(memory.wrong_answer_rate)} label="Answers from memory with a wrong number"
           detail={`${memory.answers_with_wrong_number} of ${memory.answers} answers`} />

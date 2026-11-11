@@ -214,7 +214,7 @@ def main(argv: list[str]) -> int:
         judged = [r for r in subset if r["naive_flagged"] is not None]
         naive_caught = sum(1 for r in judged if r["naive_flagged"])
         by_type.append({
-            **error, "n": len(subset),
+            **error, "n": len(subset), "naive_n": len(judged),
             "caught": caught, "catch_rate": rate(caught, len(subset)),
             "flagged_amber": amber, "missed": len(subset) - caught - amber,
             "exact_diagnosis": exact, "exact_rate": rate(exact, len(subset)),
@@ -243,6 +243,7 @@ def main(argv: list[str]) -> int:
             "flagged_rate": rate(caught_all + sum(t["flagged_amber"] for t in by_type), total),
             "missed": sum(t["missed"] for t in by_type),
             "naive_catch_rate": rate(sum(1 for r in naive_judged if r["naive_flagged"]), len(naive_judged)),
+            "naive_judged": len(naive_judged),
         },
         "false_alarms": {
             "untouched_numbers": untouched,

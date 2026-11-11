@@ -23,6 +23,12 @@ export default function EvalTab() {
         {data.analyses} analyses were written by an LLM from real filing figures. Known errors were injected into copies
         by a script ({data.injected} copies), and each copy went through ProofLine and through a naive LLM checker.
       </p>
+      {data.failed_runs > 0 && (
+        <Notice tone="warn" title="Partial run">
+          {data.failed_runs} calls are missing (usage limit), mostly in the naive baseline, which was judged on{" "}
+          {data.overall.naive_judged} of {data.injected} copies. Re-run <code>uv run python eval/run_eval.py</code>.
+        </Notice>
+      )}
       <div className="stats">
         <Stat value={percent(data.overall.catch_rate, 1)} label="Injected errors caught by ProofLine"
           detail={`Naive LLM checker: ${percent(data.overall.naive_catch_rate, 1)}`} tone="good" />
