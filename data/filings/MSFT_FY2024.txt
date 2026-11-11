@@ -1,0 +1,109 @@
+MICROSOFT CORP (MSFT) Form 10-K for fiscal year 2024, filed 2024-07-30, accession 0000950170-24-087843. Source: https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/
+
+## INCOME STATEMENTS
+INCOME STATEMENTS - USD ($) shares in Millions, $ in Millions | 12 Months Ended
+Jun. 30, 2024 | Jun. 30, 2023 | Jun. 30, 2022
+Revenue | $ 245,122 | $ 211,915 | $ 198,270
+Cost of revenue | 74,114 | 65,863 | 62,650
+Gross margin | 171,008 | 146,052 | 135,620
+Research and development | 29,510 | 27,195 | 24,512
+Sales and marketing | 24,456 | 22,759 | 21,825
+General and administrative | 7,609 | 7,575 | 5,900
+Operating income | 109,433 | 88,523 | 83,383
+Other income (expense), net | (1,646) | 788 | 333
+Income before income taxes | 107,787 | 89,311 | 83,716
+Provision for income taxes | 19,651 | 16,950 | 10,978
+Net income | $ 88,136 | $ 72,361 | $ 72,738
+Earnings per share:
+Basic | $ 11.86 | $ 9.72 | $ 9.70
+Diluted | $ 11.80 | $ 9.68 | $ 9.65
+Weighted average shares outstanding:
+Basic | 7,431 | 7,446 | 7,496
+Diluted | 7,469 | 7,472 | 7,540
+Product
+Revenue | $ 64,773 | $ 64,699 | $ 72,732
+Cost of revenue | 15,272 | 17,804 | 19,064
+Service and Other
+Revenue | 180,349 | 147,216 | 125,538
+Cost of revenue | $ 58,842 | $ 48,059 | $ 43,586
+
+## BALANCE SHEETS
+BALANCE SHEETS - USD ($) $ in Millions | Jun. 30, 2024 | Jun. 30, 2023
+Current assets:
+Cash and cash equivalents | $ 18,315 | $ 34,704
+Short-term investments | 57,228 | 76,558
+Total cash, cash equivalents, and short-term investments | 75,543 | 111,262
+Accounts receivable, net of allowance for doubtful accounts of $830 and $650 | 56,924 | 48,688
+Inventories | 1,246 | 2,500
+Other current assets | 26,021 | 21,807
+Total current assets | 159,734 | 184,257
+Property and equipment, net of accumulated depreciation of $76,421 and $68,251 | 135,591 | 95,641
+Operating lease right-of-use assets | 18,961 | 14,346
+Equity and other investments | 14,600 | 9,879
+Goodwill | 119,220 | 67,886
+Intangible assets, net | 27,597 | 9,366
+Other long-term assets | 36,460 | 30,601
+Total assets | 512,163 | 411,976
+Current liabilities:
+Accounts payable | 21,996 | 18,095
+Short-term debt | 6,693 | 0
+Current portion of long-term debt | 2,249 | 5,247
+Accrued compensation | 12,564 | 11,009
+Short-term income taxes | 5,017 | 4,152
+Short-term unearned revenue | 57,582 | 50,901
+Other current liabilities | 19,185 | 14,745
+Total current liabilities | 125,286 | 104,149
+Long-term debt | 42,688 | 41,990
+Long-term income taxes | 27,931 | 25,560
+Long-term unearned revenue | 2,602 | 2,912
+Deferred income taxes | 2,618 | 433
+Operating lease liabilities | 15,497 | 12,728
+Other long-term liabilities | 27,064 | 17,981
+Total liabilities | 243,686 | 205,753
+Commitments and contingencies
+Stockholders’ equity:
+Common stock and paid-in capital - shares authorized 24,000; outstanding 7,434 and 7,432 | 100,923 | 93,718
+Retained earnings | 173,144 | 118,848
+Accumulated other comprehensive loss | (5,590) | (6,343)
+Total stockholders’ equity | 268,477 | 206,223
+Total liabilities and stockholders’ equity | $ 512,163 | $ 411,976
+
+## Impact of Acquistion on Consolidated Income Statements (Detail)
+Impact of Acquistion on Consolidated Income Statements (Detail) - Activision Blizzard, Inc. $ in Millions | 12 Months Ended
+Jun. 30, 2024 USD ($)
+Business Acquisition [Line Items]
+Revenue | $ 5,729
+Operating loss | $ (1,362)
+
+## Supplemental Balance Sheet Information Related to Leases (Detail)
+Supplemental Balance Sheet Information Related to Leases (Detail) - USD ($) $ in Millions | Jun. 30, 2024 | Jun. 30, 2023
+Operating Leases
+Operating lease right-of-use assets | $ 18,961 | $ 14,346
+Total operating lease liabilities | 19,077 | 15,137
+Finance Leases
+Property and equipment, at cost | 212,012 | 163,892
+Accumulated depreciation | (76,421) | (68,251)
+Property and equipment, net | 135,591 | 95,641
+Total finance lease liabilities | $ 27,145 | $ 17,067
+Weighted Average Remaining Lease Term
+Operating leases | 7 years | 8 years
+Finance leases | 12 years | 11 years
+Weighted Average Discount Rate
+Operating leases | 3.30% | 2.90%
+Finance leases | 3.90% | 3.40%
+Finance Lease
+Finance Leases
+Property and equipment, at cost | $ 32,248 | $ 20,538
+Accumulated depreciation | (6,386) | (4,647)
+Property and equipment, net | 25,862 | 15,891
+Other Current Liabilities
+Operating Leases
+Total operating lease liabilities | 3,580 | 2,409
+Finance Leases
+Total finance lease liabilities | 2,349 | 1,197
+Operating Lease Liabilities
+Operating Leases
+Total operating lease liabilities | 15,497 | 12,728
+Other Long-term Liabilities
+Finance Leases
+Total finance lease liabilities | $ 24,796 | $ 15,870

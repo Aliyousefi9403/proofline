@@ -1,0 +1,165 @@
+NVIDIA CORP (NVDA) Form 10-K for fiscal year 2023, filed 2023-02-24, accession 0001045810-23-000017. Source: https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/
+
+## CONSOLIDATED STATEMENTS OF INCOME
+CONSOLIDATED STATEMENTS OF INCOME - USD ($) shares in Millions, $ in Millions | 12 Months Ended
+Jan. 29, 2023 | Jan. 30, 2022 | Jan. 31, 2021
+Income Statement [Abstract]
+Revenue | $ 26,974 | $ 26,914 | $ 16,675
+Cost of revenue | 11,618 | 9,439 | 6,279
+Gross profit | 15,356 | 17,475 | 10,396
+Operating expenses
+Research and development | 7,339 | 5,268 | 3,924
+Sales, general and administrative | 2,440 | 2,166 | 1,940
+Acquisition termination cost | 1,353 | 0 | 0
+Total operating expenses | 11,132 | 7,434 | 5,864
+Income from operations | 4,224 | 10,041 | 4,532
+Interest income | 267 | 29 | 57
+Interest expense | (262) | (236) | (184)
+Other, net | (48) | 107 | 4
+Other income (expense), net | (43) | (100) | (123)
+Income before income tax | 4,181 | 9,941 | 4,409
+Income tax expense (benefit) | (187) | 189 | 77
+Net income | $ 4,368 | $ 9,752 | $ 4,332
+Net income per share:
+Basic (in USD per share) | $ 1.76 | $ 3.91 | $ 1.76
+Diluted (in USD per share) | $ 1.74 | $ 3.85 | $ 1.73
+Weighted average shares used in per share computation:
+Basic (in shares) | 2,487 | 2,496 | 2,467
+Diluted (in shares) | 2,507 | 2,535 | 2,510
+
+## CONSOLIDATED BALANCE SHEETS
+CONSOLIDATED BALANCE SHEETS - USD ($) $ in Millions | Jan. 29, 2023 | Jan. 30, 2022
+Current assets:
+Cash and cash equivalents | $ 3,389 | $ 1,990
+Marketable securities | 9,907 | 19,218
+Accounts receivable, net | 3,827 | 4,650
+Inventories | 5,159 | 2,605
+Prepaid expenses and other current assets | 791 | 366
+Total current assets | 23,073 | 28,829
+Property and equipment, net | 3,807 | 2,778
+Operating lease assets | 1,038 | 829
+Goodwill | 4,372 | 4,349
+Intangible assets, net | 1,676 | 2,339
+Deferred income tax assets | 3,396 | 1,222
+Other assets | 3,820 | 3,841
+Total assets | 41,182 | 44,187
+Current liabilities:
+Accounts payable | 1,193 | 1,783
+Accrued and other current liabilities | 4,120 | 2,552
+Short-term debt | 1,250 | 0
+Total current liabilities | 6,563 | 4,335
+Long-term debt | 9,703 | 10,946
+Long-term operating lease liabilities | 902 | 741
+Other long-term liabilities | 1,913 | 1,553
+Total liabilities | 19,081 | 17,575
+Commitments and contingencies - see Note 13
+Shareholders’ equity:
+Preferred stock, $0.001 par value; 2 shares authorized; none issued | 0 | 0
+Common stock, $0.001 par value; 8,000 shares authorized; 2,466 shares issued and outstanding as of January 29, 2023; 2,506 shares issued and outstanding as of January 30, 2022 | 2 | 3
+Additional paid-in capital | 11,971 | 10,385
+Accumulated other comprehensive loss | (43) | (11)
+Retained earnings | 10,171 | 16,235
+Total shareholders' equity | 22,101 | 26,612
+Total liabilities and shareholders' equity | $ 41,182 | $ 44,187
+
+## CONSOLIDATED STATEMENTS OF CASH FLOWS
+CONSOLIDATED STATEMENTS OF CASH FLOWS - USD ($) $ in Millions | 12 Months Ended
+Jan. 29, 2023 | Jan. 30, 2022 | Jan. 31, 2021
+Cash flows from operating activities:
+Net income | $ 4,368 | $ 9,752 | $ 4,332
+Adjustments to reconcile net income to net cash provided by operating activities:
+Stock-based compensation expense | 2,709 | 2,004 | 1,397
+Depreciation and amortization | 1,544 | 1,174 | 1,098
+Acquisition termination cost | 1,353 | 0 | 0
+Losses (gains) on investments in non-affiliates, net | 45 | (100) | 0
+Deferred income taxes | (2,164) | (406) | (282)
+Other | (7) | 47 | (20)
+Changes in operating assets and liabilities, net of acquisitions:
+Accounts receivable | 822 | (2,215) | (550)
+Inventories | (2,554) | (774) | (524)
+Prepaid expenses and other assets | (1,517) | (1,715) | (394)
+Accounts payable | (551) | 568 | 312
+Accrued and other current liabilities | 1,341 | 581 | 290
+Other long-term liabilities | 252 | 192 | 163
+Net cash provided by operating activities | 5,641 | 9,108 | 5,822
+Cash flows from investing activities:
+Proceeds from maturities of marketable securities | 19,425 | 15,197 | 8,792
+Proceeds from sales of marketable securities | 1,806 | 1,023 | 527
+Purchases of marketable securities | (11,897) | (24,787) | (19,308)
+Purchases related to property and equipment and intangible assets | (1,833) | (976) | (1,128)
+Acquisitions, net of cash acquired | (49) | (263) | (8,524)
+Investments and other, net | (77) | (24) | (34)
+Net cash provided by (used in) investing activities | 7,375 | (9,830) | (19,675)
+Cash flows from financing activities:
+Proceeds related to employee stock plans | 355 | 281 | 194
+Payments related to repurchases of common stock | (10,039) | 0 | 0
+Payments related to tax on restricted stock units | (1,475) | (1,904) | (942)
+Dividends paid | (398) | (399) | (395)
+Principal payments on property and equipment | (58) | (83) | (17)
+Issuance of debt, net of issuance costs | 0 | 4,977 | 4,968
+Repayment of debt | 0 | (1,000) | 0
+Other | (2) | (7) | (4)
+Net cash provided by (used in) financing activities | (11,617) | 1,865 | 3,804
+Change in cash and cash equivalents | 1,399 | 1,143 | (10,049)
+Cash and cash equivalents at beginning of period | 1,990 | 847 | 10,896
+Cash and cash equivalents at end of period | 3,389 | 1,990 | 847
+Supplemental disclosures of cash flow information:
+Cash paid for income taxes, net | 1,404 | 396 | 249
+Cash paid for interest | $ 254 | $ 246 | $ 138
+
+## Balance Sheet Components
+Balance Sheet Components | 12 Months Ended
+Jan. 29, 2023
+Organization, Consolidation and Presentation of Financial Statements [Abstract]
+January 29,2023 | January 30,2022
+(In millions)
+Inventories (1):
+Raw materials | $ | 2,430 | $ | 791
+Work in-process | 466 | 692
+Finished goods | 2,263 | 1,122
+Total inventories | $ | 5,159 | $ | 2,605
+January 29,2023 | January 30,2022 | EstimatedUseful Life
+(In millions) | (In years)
+Property and Equipment:
+Land | $ | 218 | $ | 218 | (A)
+Buildings, leasehold improvements, and furniture | 1,598 | 874 | (B)
+Equipment, compute hardware, and software | 4,303 | 2,852 | 3-5
+Construction in process | 382 | 737 | (C)
+Total property and equipment, gross | 6,501 | 4,681
+Accumulated depreciation and amortization | (2,694) | (1,903)
+Total property and equipment, net | $ | 3,807 | $ | 2,778
+January 29,2023 | January 30,2022
+Other assets: | (In millions)
+Prepaid supply agreements | $ | 2,989 | $ | 1,747
+Prepaid royalties | 387 | 409
+Investment in non-affiliated entities | 299 | 266
+Advanced consideration for acquisition (1) | — | 1,353
+Other | 145 | 66
+Total other assets | $ | 3,820 | $ | 3,841
+January 29,2023 | January 30,2022
+(In millions)
+Accrued and Other Current Liabilities:
+Customer program accruals | $ | 1,196 | $ | 1,000
+Excess inventory purchase obligations (1) | 954 | 196
+Accrued payroll and related expenses | 530 | 409
+Taxes payable | 467 | 132
+Deferred revenue (2) | 354 | 300
+Operating leases | 176 | 144
+Other | 443 | 371
+Total accrued and other current liabilities | $ | 4,120 | $ | 2,552
+January 29,2023 | January 30,2022
+(In millions)
+Other Long-Term Liabilities:
+Income tax payable (1) | $ | 1,204 | $ | 980
+Deferred income tax | 247 | 245
+Deferred revenue (2) | 218 | 202
+Licenses payable | 181 | 77
+Other | 63 | 49
+Total other long-term liabilities | $ | 1,913 | $ | 1,553
+January 29,2023 | January 30,2022
+(In millions)
+Balance at beginning of period | $ | 502 | $ | 451
+Deferred revenue added during the period | 830 | 821
+Addition due to business combinations | — | 8
+Revenue recognized during the period | (760) | (778)
+Balance at end of period | $ | 572 | $ | 502

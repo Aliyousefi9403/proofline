@@ -1,0 +1,178 @@
+Tesla, Inc. (TSLA) Form 10-K for fiscal year 2024, filed 2025-01-30, accession 0001628280-25-003063. Source: https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/
+
+## Consolidated Balance Sheets
+Consolidated Balance Sheets - USD ($) $ in Millions | Dec. 31, 2024 | Dec. 31, 2023
+Current assets
+Cash and cash equivalents | $ 16,139 | $ 16,398
+Short-term investments | 20,424 | 12,696
+Accounts receivable, net | 4,418 | 3,508
+Inventory | 12,017 | 13,626
+Prepaid expenses and other current assets | 5,362 | 3,388
+Total current assets | 58,360 | 49,616
+Property, plant and equipment, net | 35,836 | 29,725
+Operating lease right-of-use assets | 5,160 | 4,180
+Digital assets, net | 1,076 | 184
+Intangible assets, net | 150 | 178
+Goodwill | 244 | 253
+Deferred tax assets | 6,524 | 6,733
+Other non-current assets | 4,215 | 4,531
+Total assets | 122,070 | 106,618
+Current liabilities
+Accounts payable | 12,474 | 14,431
+Accrued liabilities and other | 10,723 | 9,080
+Deferred revenue | 3,168 | 2,864
+Current portion of debt and finance leases | 2,456 | 2,373
+Total current liabilities | 28,821 | 28,748
+Debt and finance leases, net of current portion | 5,757 | 2,857
+Deferred revenue, net of current portion | 3,317 | 3,251
+Other long-term liabilities | 10,495 | 8,153
+Total liabilities | 48,390 | 43,009
+Commitments and contingencies (Note 14)
+Redeemable noncontrolling interests in subsidiaries | 63 | 242
+Stockholders’ equity
+Preferred stock; $0.001 par value; 100 shares authorized; no shares issued and outstanding | 0 | 0
+Common stock; $0.001 par value; 6,000 shares authorized; 3,216 and 3,185 shares issued and outstanding as of December 31, 2024 and December 31, 2023, respectively | 3 | 3
+Additional paid-in capital | 38,371 | 34,892
+Accumulated other comprehensive loss | (670) | (143)
+Retained earnings | 35,209 | 27,882
+Total stockholders’ equity | 72,913 | 62,634
+Noncontrolling interests in subsidiaries | 704 | 733
+Total liabilities and equity | 122,070 | 106,618
+Operating Lease Vehicles
+Current assets
+Operating lease vehicles, net | 5,581 | 5,989
+Solar energy systems, net
+Current assets
+Solar energy systems, net | $ 4,924 | $ 5,229
+
+## Consolidated Statements of Operations
+Consolidated Statements of Operations - USD ($) shares in Millions, $ in Millions | 12 Months Ended
+Dec. 31, 2024 | Dec. 31, 2023 | Dec. 31, 2022
+Revenues
+Revenues | $ 97,690 | $ 96,773 | $ 81,462
+Cost of revenues
+Total cost of revenues | 80,240 | 79,113 | 60,609
+Gross profit | 17,450 | 17,660 | 20,853
+Operating expenses
+Research and development | 4,540 | 3,969 | 3,075
+Selling, general and administrative | 5,150 | 4,800 | 3,946
+Restructuring and other | 684 | 0 | 176
+Total operating expenses | 10,374 | 8,769 | 7,197
+Income from operations | 7,076 | 8,891 | 13,656
+Interest income | 1,569 | 1,066 | 297
+Interest expense | (350) | (156) | (191)
+Other income (expense), net | 695 | 172 | (43)
+Income before income taxes | 8,990 | 9,973 | 13,719
+Provision for (benefit from) income taxes | 1,837 | (5,001) | 1,132
+Net income | 7,153 | 14,974 | 12,587
+Net income (loss) attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries | 62 | (23) | 31
+Net income attributable to common stockholders | $ 7,091 | $ 14,997 | $ 12,556
+Net income per share of common stock attributable to common stockholders
+Basic (in dollars per share) | $ 2.23 | $ 4.73 | $ 4.02
+Diluted (in dollars per share) | $ 2.04 | $ 4.30 | $ 3.62
+Weighted average shares used in computing net income per share of common stock
+Basic (in shares) | 3,197 | 3,174 | 3,130
+Diluted (in shares) | 3,498 | 3,485 | 3,475
+Automotive Revenues
+Revenues
+Revenues | $ 77,070 | $ 82,419 | $ 71,462
+Cost of revenues
+Total cost of revenues | 62,873 | 66,389 | 51,108
+Automotive sales
+Revenues
+Revenues | 72,480 | 78,509 | 67,210
+Cost of revenues
+Total cost of revenues | 61,870 | 65,121 | 49,599
+Automotive regulatory credits
+Revenues
+Revenues | 2,763 | 1,790 | 1,776
+Automotive leasing
+Revenues
+Revenues | 1,827 | 2,120 | 2,476
+Cost of revenues
+Total cost of revenues | 1,003 | 1,268 | 1,509
+Energy generation and storage
+Revenues
+Revenues | 10,086 | 6,035 | 3,909
+Cost of revenues
+Total cost of revenues | 7,446 | 4,894 | 3,621
+Services and other
+Revenues
+Revenues | 10,534 | 8,319 | 6,091
+Cost of revenues
+Total cost of revenues | $ 9,921 | $ 7,830 | $ 5,880
+
+## Consolidated Statements of Cash Flows
+Consolidated Statements of Cash Flows - USD ($) $ in Millions | 12 Months Ended
+Dec. 31, 2024 | Dec. 31, 2023 | Dec. 31, 2022
+Cash Flows from Operating Activities
+Net income | $ 7,153 | $ 14,974 | $ 12,587
+Adjustments to reconcile net income to net cash provided by operating activities:
+Depreciation, amortization and impairment | 5,368 | 4,667 | 3,747
+Stock-based compensation | 1,999 | 1,812 | 1,560
+Inventory and purchase commitments write-downs | 335 | 463 | 177
+Foreign currency transaction net unrealized loss (gain) | (73) | (144) | 81
+Deferred income taxes | 477 | (6,349) | (196)
+Non-cash interest and other operating activities | 172 | 81 | 340
+Digital assets (gain) loss, net | (589) | 0 | 140
+Changes in operating assets and liabilities:
+Accounts receivable | (1,083) | (586) | (1,124)
+Inventory | 937 | (1,195) | (6,465)
+Operating lease vehicles | (590) | (1,952) | (1,570)
+Prepaid expenses and other assets | (3,273) | (2,652) | (3,713)
+Accounts payable, accrued and other liabilities | 3,588 | 2,605 | 8,029
+Deferred revenue | 502 | 1,532 | 1,131
+Net cash provided by operating activities | 14,923 | 13,256 | 14,724
+Cash Flows from Investing Activities
+Purchases of property and equipment excluding finance leases, net of sales | (11,339) | (8,898) | (7,158)
+Purchases of solar energy systems, net of sales | (3) | (1) | (5)
+Proceeds from sales of digital assets | 0 | 0 | 936
+Purchase of intangible assets | 0 | 0 | (9)
+Purchases of investments | (35,955) | (19,112) | (5,835)
+Proceeds from maturities of investments | 28,310 | 12,353 | 22
+Proceeds from sales of investments | 200 | 138 | 0
+Receipt of government grants | 0 | 0 | 76
+Business combinations, net of cash acquired | 0 | (64) | 0
+Net cash used in investing activities | (18,787) | (15,584) | (11,973)
+Cash Flows from Financing Activities
+Proceeds from issuances of debt | 5,744 | 3,931 | 0
+Repayments of debt | (2,500) | (1,351) | (3,364)
+Proceeds from exercises of stock options and other stock issuances | 1,241 | 700 | 541
+Principal payments on finance leases | (381) | (464) | (502)
+Debt issuance costs | (14) | (29) | 0
+Distributions paid to noncontrolling interests in subsidiaries | (104) | (144) | (157)
+Payments for buy-outs of noncontrolling interests in subsidiaries | (133) | (54) | (45)
+Net cash provided by (used in) financing activities | 3,853 | 2,589 | (3,527)
+Effect of exchange rate changes on cash and cash equivalents and restricted cash | (141) | 4 | (444)
+Net increase (decrease) in cash and cash equivalents and restricted cash | (152) | 265 | (1,220)
+Cash and cash equivalents and restricted cash, beginning of period | 17,189 | 16,924 | 18,144
+Cash and cash equivalents and restricted cash, end of period | 17,037 | 17,189 | 16,924
+Supplemental Non-Cash Investing and Financing Activities
+Acquisitions of property and equipment included in liabilities | 1,410 | 2,272 | 2,148
+Supplemental Disclosures
+Cash paid during the period for interest | 277 | 126 | 152
+Cash paid during the period for income taxes, net of refunds | $ 1,331 | $ 1,119 | $ 1,203
+
+## Leases - Schedule of Operating and Financing Leases Presented in Balance Sheets (Detail)
+Leases - Schedule of Operating and Financing Leases Presented in Balance Sheets (Detail) - USD ($) $ in Millions | Dec. 31, 2024 | Dec. 31, 2023
+Operating leases:
+Operating lease right-of-use assets | $ 5,160 | $ 4,180
+Operating Lease, Liability, Current, Statement of Financial Position [Extensible Enumeration] | Accrued liabilities and other | Accrued liabilities and other
+Accrued liabilities and other | $ 807 | $ 672
+Operating Lease, Liability, Noncurrent, Statement of Financial Position [Extensible Enumeration] | Other long-term liabilities | Other long-term liabilities
+Other long-term liabilities | $ 4,603 | $ 3,671
+Present value of lease obligations | 5,410 | 4,343
+Finance leases:
+Total finance lease assets | $ 371 | $ 624
+Finance Lease, Right-of-Use Asset, Statement of Financial Position [Extensible Enumeration] | Property, plant and equipment, net, Solar energy systems, net | Property, plant and equipment, net, Solar energy systems, net
+Finance Lease, Liability, Current, Statement of Financial Position [Extensible Enumeration] | Current portion of debt and finance leases | Current portion of debt and finance leases
+Current portion of long-term debt and finance leases | $ 113 | $ 398
+Finance Lease, Liability, Noncurrent, Statement of Financial Position [Extensible Enumeration] | Debt and finance leases, net of current portion | Debt and finance leases, net of current portion
+Long-term debt and finance leases, net of current portion | $ 222 | $ 175
+Total finance lease liabilities | 335 | 573
+Solar energy systems, net
+Finance leases:
+Total finance lease assets | 21 | 23
+Property, plant and equipment, net
+Finance leases:
+Total finance lease assets | $ 350 | $ 601

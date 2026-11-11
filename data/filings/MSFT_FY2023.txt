@@ -1,0 +1,101 @@
+MICROSOFT CORP (MSFT) Form 10-K for fiscal year 2023, filed 2023-07-27, accession 0000950170-23-035122. Source: https://www.sec.gov/Archives/edgar/data/789019/000095017023035122/
+
+## INCOME STATEMENTS
+INCOME STATEMENTS - USD ($) shares in Millions, $ in Millions | 12 Months Ended
+Jun. 30, 2023 | Jun. 30, 2022 | Jun. 30, 2021
+Revenue | $ 211,915 | $ 198,270 | $ 168,088
+Cost of revenue | 65,863 | 62,650 | 52,232
+Gross margin | 146,052 | 135,620 | 115,856
+Research and development | 27,195 | 24,512 | 20,716
+Sales and marketing | 22,759 | 21,825 | 20,117
+General and administrative | 7,575 | 5,900 | 5,107
+Operating income | 88,523 | 83,383 | 69,916
+Other income, net | 788 | 333 | 1,186
+Income before income taxes | 89,311 | 83,716 | 71,102
+Provision for income taxes | 16,950 | 10,978 | 9,831
+Net income | $ 72,361 | $ 72,738 | $ 61,271
+Earnings per share:
+Basic | $ 9.72 | $ 9.70 | $ 8.12
+Diluted | $ 9.68 | $ 9.65 | $ 8.05
+Weighted average shares outstanding:
+Basic | 7,446 | 7,496 | 7,547
+Diluted | 7,472 | 7,540 | 7,608
+Product
+Revenue | $ 64,699 | $ 72,732 | $ 71,074
+Cost of revenue | 17,804 | 19,064 | 18,219
+Service and Other
+Revenue | 147,216 | 125,538 | 97,014
+Cost of revenue | $ 48,059 | $ 43,586 | $ 34,013
+
+## BALANCE SHEETS
+BALANCE SHEETS - USD ($) $ in Millions | Jun. 30, 2023 | Jun. 30, 2022
+Current assets:
+Cash and cash equivalents | $ 34,704 | $ 13,931
+Short-term investments | 76,558 | 90,826
+Total cash, cash equivalents, and short-term investments | 111,262 | 104,757
+Accounts receivable, net of allowance for doubtful accounts of $650 and $633 | 48,688 | 44,261
+Inventories | 2,500 | 3,742
+Other current assets | 21,807 | 16,924
+Total current assets | 184,257 | 169,684
+Property and equipment, net of accumulated depreciation of $68,251 and $59,660 | 95,641 | 74,398
+Operating lease right-of-use assets | 14,346 | 13,148
+Equity investments | 9,879 | 6,891
+Goodwill | 67,886 | 67,524
+Intangible assets, net | 9,366 | 11,298
+Other long-term assets | 30,601 | 21,897
+Total assets | 411,976 | 364,840
+Current liabilities:
+Accounts payable | 18,095 | 19,000
+Current portion of long-term debt | 5,247 | 2,749
+Accrued compensation | 11,009 | 10,661
+Short-term income taxes | 4,152 | 4,067
+Short-term unearned revenue | 50,901 | 45,538
+Other current liabilities | 14,745 | 13,067
+Total current liabilities | 104,149 | 95,082
+Long-term debt | 41,990 | 47,032
+Long-term income taxes | 25,560 | 26,069
+Long-term unearned revenue | 2,912 | 2,870
+Deferred income taxes | 433 | 230
+Operating lease liabilities | 12,728 | 11,489
+Other long-term liabilities | 17,981 | 15,526
+Total liabilities | 205,753 | 198,298
+Commitments and contingencies
+Stockholders’ equity:
+Common stock and paid-in capital - shares authorized 24,000; outstanding 7,432 and 7,464 | 93,718 | 86,939
+Retained earnings | 118,848 | 84,281
+Accumulated other comprehensive loss | (6,343) | (4,678)
+Total stockholders’ equity | 206,223 | 166,542
+Total liabilities and stockholders’ equity | $ 411,976 | $ 364,840
+
+## Supplemental Balance Sheet Information Related to Leases (Detail)
+Supplemental Balance Sheet Information Related to Leases (Detail) - USD ($) $ in Millions | Jun. 30, 2023 | Jun. 30, 2022
+Operating Leases
+Operating lease right-of-use assets | $ 14,346 | $ 13,148
+Total operating lease liabilities | 15,137 | 13,717
+Finance Leases
+Property and equipment, at cost | 163,892 | 134,058
+Accumulated depreciation | (68,251) | (59,660)
+Property and equipment, net | 95,641 | 74,398
+Total finance lease liabilities | $ 17,067 | $ 14,902
+Weighted Average Remaining Lease Term
+Operating leases | 8 years | 8 years
+Finance leases | 11 years | 12 years
+Weighted Average Discount Rate
+Operating leases | 2.90% | 2.10%
+Finance leases | 3.40% | 3.10%
+Finance Lease
+Finance Leases
+Property and equipment, at cost | $ 20,538 | $ 17,388
+Accumulated depreciation | (4,647) | (3,285)
+Property and equipment, net | 15,891 | 14,103
+Other Current Liabilities
+Operating Leases
+Total operating lease liabilities | 2,409 | 2,228
+Finance Leases
+Total finance lease liabilities | 1,197 | 1,060
+Operating Lease Liabilities
+Operating Leases
+Total operating lease liabilities | 12,728 | 11,489
+Other Long-term Liabilities
+Finance Leases
+Total finance lease liabilities | $ 15,870 | $ 13,842
