@@ -134,7 +134,7 @@ def verify_report(
             "token_unit": bound.token.unit if bound.token else None,
             "status": verdict.status.value,
             "expected": verdict.expected,
-            "accessions": [s["accn"] for s in verdict.sources],
+            "accessions": list(dict.fromkeys(s["accn"] for s in verdict.sources)),
             "flags": verdict.flags,
         } for bound, verdict in verdicts]
         certificate = audit.issue_certificate(

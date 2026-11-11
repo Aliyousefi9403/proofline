@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { api } from "../api.js";
 import { REPORT_STATUS } from "../status.js";
 import CertificateCard from "./CertificateCard.jsx";
@@ -56,6 +56,12 @@ export default function GuardTab() {
     }
   }
 
+  // Deep link for demos: /?ask=1#guard asks the first sample question straight away.
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("ask")) ask();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const action = data ? ACTION[data.action] : null;
   const status = data ? REPORT_STATUS[data.verification.summary.status] : null;
 
@@ -108,7 +114,7 @@ export default function GuardTab() {
               <ul className="changes">
                 {data.changes.map((c, i) => (
                   <li key={i}>
-                    <span className="strike">{c.original}</span>
+                    <span className={c.action === "corrected" ? "strike" : ""}>{c.original}</span>
                     <Icon name="arrow" size={12} />
                     <strong>{c.released}</strong>
                     <span className="muted">{c.reason}</span>
