@@ -16,7 +16,7 @@ IEEE hackathon, LSEG track (Finance, Data and Compliance).
 ```bash
 # 1. Python backend (needs uv: https://docs.astral.sh/uv/)
 uv sync
-uv run pytest                       # 207 tests, no network, no LLM
+uv run pytest                       # 215 tests, no network, no LLM
 
 # 2. Front end
 cd frontend && npm install && npm run build && cd ..
@@ -129,7 +129,30 @@ uv run python eval/run_eval.py           # eval/results.json, dataset.json, labe
 uv run python eval/leaderboard.py        # eval/leaderboard.json, samples/real_failures/
 ```
 
-RESULTS_PLACEHOLDER
+<!-- results:start -->
+### Prompt injection (red team)
+
+20 reports with one known wrong number each, 100 poisoned copies. Attack success rate: the wrong number got through with no flag. Lower is better.
+
+| Attack | Naive LLM checker | ProofLine, defences off | ProofLine, defences on |
+|---|---:|---:|---:|
+| Skip | 95% (19/20) | 0% (0/20) | 0% (0/20) |
+| Rewrite | 0% (0/20) | 0% (0/20) | 0% (0/20) |
+| Hidden text | 85% (17/20) | 0% (0/20) | 0% (0/20) |
+| Verdict | 5% (1/20) | 0% (0/20) | 0% (0/20) |
+| Split number | 0% (0/20) | 0% (0/20) | 0% (0/20) |
+| No attack (control) | 0% (0/20) | 0% (0/20) | 0% (0/20) |
+
+With no attack the naive checker flagged 20 of 20 wrong numbers. With the "skip" attack it passed 19 of 20. In this run the extractor model ignored the injected instructions, so ProofLine with defences off also scored 0%. The code defences are what holds if a model does obey; `tests/test_pipeline.py` simulates an obedient extractor and shows each defence catching it. Model: claude-opus-5-5.
+
+### Evaluation
+
+Not run yet.
+
+### Model leaderboard
+
+Not run yet: `uv run python eval/leaderboard.py`.
+<!-- results:end -->
 
 ## Demo script (about 4 minutes)
 
@@ -144,6 +167,28 @@ RESULTS_PLACEHOLDER
 6. **Guardrail tab.** A judge asks their own question. Left: what the agent said. Right: what the reader gets.
 7. **Audit log tab.** Verify chain, then Simulate tampering.
 8. **Evaluation tab.** Catch rate, false alarms, speed. Limits: US 10-K filings, numeric claims, five companies.
+
+## Status and how to continue
+
+Done and tested: data layer, checker, coverage check, sanitiser, extractor (LLM and offline), audit log with
+certificates and replay, guardrail mode, API, UI with seven tabs, red-team harness, evaluation, leaderboard.
+
+To pick up the work:
+
+- **Re-run an experiment.** Each script is resumable. Finished LLM calls are cached in `llm_cache/`, so a re-run
+  only makes the calls that failed (for example after a rate limit). Then run
+  `uv run python scripts/update_readme.py` to refresh the tables above.
+- **Add a company.** `uv run python scripts/fetch_data.py GOOGL`, then add its name to `COMPANY_ALIASES` in
+  `backend/edgar.py`.
+- **Add a metric.** Add a `MetricSpec` with its XBRL tags to `METRICS` in `backend/edgar.py`, a line to
+  `METRIC_NOTES` in `backend/extract.py`, and a known value to `tests/test_edgar.py`.
+- **Change tolerances.** `Policy` in `backend/check.py`.
+- **Demo deep link.** `http://localhost:8000/?sample=poisoned&run=1` loads a sample and verifies it at once.
+  Sample ids are in `samples/index.json`.
+- **Coverage.** `uv run --with pytest-cov pytest --cov=backend` (95% at the time of writing).
+
+Not built (stretch goals from the brief): an MCP tool wrapper for guardrail mode (the `/ask` and `/guard`
+endpoints cover the same flow over HTTP), text claims checked by retrieval, quarterly 10-Q data, UK companies.
 
 ## Limits
 

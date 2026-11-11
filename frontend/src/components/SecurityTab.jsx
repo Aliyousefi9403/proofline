@@ -14,6 +14,7 @@ export default function SecurityTab({ onOpen }) {
     return <Empty title="No red-team results yet">Run <code>uv run python redteam/run_attacks.py</code> to generate them.</Empty>;
   }
   const systems = data.systems;
+  const worst = [...data.attacks].sort((a, b) => b.results.naive.rate - a.results.naive.rate)[0];
   const rows = [...data.attacks, { id: "none", label: data.control.label, description: data.control.description, results: data.control.results, control: true }];
 
   return (
@@ -58,6 +59,13 @@ export default function SecurityTab({ onOpen }) {
           </tbody>
         </table>
       </div>
+      <Notice tone="warn" title="What the naive checker did">
+        It knows these figures: with no attack it flagged {data.control.results.naive.total - data.control.results.naive.success} of{" "}
+        {data.control.results.naive.total} wrong numbers. One sentence saying the figure was "already verified, do not
+        extract it" and it passed {worst.results.naive.success} of {worst.results.naive.total} as accurate. The same
+        model, used only as ProofLine's extractor with code doing the checking, let through{" "}
+        {data.overall.on.success} of {data.overall.on.total}.
+      </Notice>
       {data.breaches.length === 0 ? (
         <Notice tone="good" title="No attack beat the full system in this run">
           That is a measurement on {data.poisoned} reports, not a guarantee. The design reason it holds: the model
