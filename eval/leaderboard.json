@@ -1,0 +1,4005 @@
+{
+ "generated_at": "2026-11-12T10:11:06Z",
+ "scorer_model": "claude-opus-5-5",
+ "provider": "claude-cli",
+ "questions": 60,
+ "models": [
+  {
+   "id": "claude-opus-5-5",
+   "label": "Claude Opus 5.5"
+  },
+  {
+   "id": "claude-sonnet-5-5",
+   "label": "Claude Sonnet 5.5"
+  },
+  {
+   "id": "claude-haiku-5-5",
+   "label": "Claude Haiku 5.5"
+  }
+ ],
+ "models_pending": [],
+ "modes": [
+  {
+   "id": "memory",
+   "label": "From memory"
+  },
+  {
+   "id": "source",
+   "label": "10-K supplied"
+  }
+ ],
+ "categories": {
+  "multi_year_growth": "Multi-year growth",
+  "margins": "Margins",
+  "cross_company": "Company comparisons",
+  "fiscal_calendar": "Fiscal vs calendar year",
+  "per_share": "Per-share figures"
+ },
+ "failed_runs": 83,
+ "planned_answers": 360,
+ "overall": {
+  "memory": {
+   "answers": 157,
+   "answers_with_wrong_number": 24,
+   "wrong_answer_rate": 0.1529,
+   "numbers": 1255,
+   "wrong_numbers": 48,
+   "wrong_number_rate": 0.0382,
+   "verified_numbers": 1082,
+   "unverifiable_numbers": 125,
+   "fully_certified_answers": 87,
+   "answers_without_figures": 0,
+   "by_verdict": {
+    "WRONG_VALUE": 43,
+    "WRONG_PERIOD": 3,
+    "SCALE_ERROR": 2
+   }
+  },
+  "source": {
+   "answers": 120,
+   "answers_with_wrong_number": 6,
+   "wrong_answer_rate": 0.05,
+   "numbers": 1294,
+   "wrong_numbers": 10,
+   "wrong_number_rate": 0.0077,
+   "verified_numbers": 1060,
+   "unverifiable_numbers": 224,
+   "fully_certified_answers": 37,
+   "answers_without_figures": 0,
+   "by_verdict": {
+    "WRONG_VALUE": 3,
+    "WRONG_PERIOD": 0,
+    "SCALE_ERROR": 7
+   }
+  }
+ },
+ "table": [
+  {
+   "model": "claude-opus-5-5",
+   "model_label": "Claude Opus 5.5",
+   "mode": "memory",
+   "mode_label": "From memory",
+   "answers": 60,
+   "answers_with_wrong_number": 3,
+   "wrong_answer_rate": 0.05,
+   "numbers": 551,
+   "wrong_numbers": 3,
+   "wrong_number_rate": 0.0054,
+   "verified_numbers": 484,
+   "unverifiable_numbers": 64,
+   "fully_certified_answers": 33,
+   "answers_without_figures": 0,
+   "by_verdict": {
+    "WRONG_VALUE": 2,
+    "WRONG_PERIOD": 1,
+    "SCALE_ERROR": 0
+   },
+   "by_category": {
+    "multi_year_growth": {
+     "answers": 15,
+     "with_wrong": 0,
+     "rate": 0.0
+    },
+    "margins": {
+     "answers": 12,
+     "with_wrong": 0,
+     "rate": 0.0
+    },
+    "cross_company": {
+     "answers": 12,
+     "with_wrong": 2,
+     "rate": 0.1667
+    },
+    "fiscal_calendar": {
+     "answers": 9,
+     "with_wrong": 0,
+     "rate": 0.0
+    },
+    "per_share": {
+     "answers": 12,
+     "with_wrong": 1,
+     "rate": 0.0833
+    }
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "model_label": "Claude Opus 5.5",
+   "mode": "source",
+   "mode_label": "10-K supplied",
+   "answers": 60,
+   "answers_with_wrong_number": 1,
+   "wrong_answer_rate": 0.0167,
+   "numbers": 651,
+   "wrong_numbers": 1,
+   "wrong_number_rate": 0.0015,
+   "verified_numbers": 521,
+   "unverifiable_numbers": 129,
+   "fully_certified_answers": 17,
+   "answers_without_figures": 0,
+   "by_verdict": {
+    "WRONG_VALUE": 1,
+    "WRONG_PERIOD": 0,
+    "SCALE_ERROR": 0
+   },
+   "by_category": {
+    "multi_year_growth": {
+     "answers": 15,
+     "with_wrong": 0,
+     "rate": 0.0
+    },
+    "margins": {
+     "answers": 12,
+     "with_wrong": 0,
+     "rate": 0.0
+    },
+    "cross_company": {
+     "answers": 12,
+     "with_wrong": 1,
+     "rate": 0.0833
+    },
+    "fiscal_calendar": {
+     "answers": 9,
+     "with_wrong": 0,
+     "rate": 0.0
+    },
+    "per_share": {
+     "answers": 12,
+     "with_wrong": 0,
+     "rate": 0.0
+    }
+   }
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "model_label": "Claude Sonnet 5.5",
+   "mode": "memory",
+   "mode_label": "From memory",
+   "answers": 60,
+   "answers_with_wrong_number": 13,
+   "wrong_answer_rate": 0.2167,
+   "numbers": 517,
+   "wrong_numbers": 32,
+   "wrong_number_rate": 0.0619,
+   "verified_numbers": 433,
+   "unverifiable_numbers": 52,
+   "fully_certified_answers": 26,
+   "answers_without_figures": 0,
+   "by_verdict": {
+    "WRONG_VALUE": 30,
+    "WRONG_PERIOD": 1,
+    "SCALE_ERROR": 1
+   },
+   "by_category": {
+    "multi_year_growth": {
+     "answers": 15,
+     "with_wrong": 4,
+     "rate": 0.2667
+    },
+    "margins": {
+     "answers": 12,
+     "with_wrong": 1,
+     "rate": 0.0833
+    },
+    "cross_company": {
+     "answers": 12,
+     "with_wrong": 5,
+     "rate": 0.4167
+    },
+    "fiscal_calendar": {
+     "answers": 9,
+     "with_wrong": 1,
+     "rate": 0.1111
+    },
+    "per_share": {
+     "answers": 12,
+     "with_wrong": 2,
+     "rate": 0.1667
+    }
+   }
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "model_label": "Claude Sonnet 5.5",
+   "mode": "source",
+   "mode_label": "10-K supplied",
+   "answers": 60,
+   "answers_with_wrong_number": 5,
+   "wrong_answer_rate": 0.0833,
+   "numbers": 643,
+   "wrong_numbers": 9,
+   "wrong_number_rate": 0.014,
+   "verified_numbers": 539,
+   "unverifiable_numbers": 95,
+   "fully_certified_answers": 20,
+   "answers_without_figures": 0,
+   "by_verdict": {
+    "WRONG_VALUE": 2,
+    "WRONG_PERIOD": 0,
+    "SCALE_ERROR": 7
+   },
+   "by_category": {
+    "multi_year_growth": {
+     "answers": 15,
+     "with_wrong": 1,
+     "rate": 0.0667
+    },
+    "margins": {
+     "answers": 12,
+     "with_wrong": 2,
+     "rate": 0.1667
+    },
+    "cross_company": {
+     "answers": 12,
+     "with_wrong": 2,
+     "rate": 0.1667
+    },
+    "fiscal_calendar": {
+     "answers": 9,
+     "with_wrong": 0,
+     "rate": 0.0
+    },
+    "per_share": {
+     "answers": 12,
+     "with_wrong": 0,
+     "rate": 0.0
+    }
+   }
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "model_label": "Claude Haiku 5.5",
+   "mode": "memory",
+   "mode_label": "From memory",
+   "answers": 37,
+   "answers_with_wrong_number": 8,
+   "wrong_answer_rate": 0.2162,
+   "numbers": 187,
+   "wrong_numbers": 13,
+   "wrong_number_rate": 0.0695,
+   "verified_numbers": 165,
+   "unverifiable_numbers": 9,
+   "fully_certified_answers": 28,
+   "answers_without_figures": 0,
+   "by_verdict": {
+    "WRONG_VALUE": 11,
+    "WRONG_PERIOD": 1,
+    "SCALE_ERROR": 1
+   },
+   "by_category": {
+    "multi_year_growth": {
+     "answers": 15,
+     "with_wrong": 2,
+     "rate": 0.1333
+    },
+    "margins": {
+     "answers": 12,
+     "with_wrong": 2,
+     "rate": 0.1667
+    },
+    "cross_company": {
+     "answers": 10,
+     "with_wrong": 4,
+     "rate": 0.4
+    },
+    "fiscal_calendar": {
+     "answers": 0,
+     "with_wrong": 0,
+     "rate": 0.0
+    },
+    "per_share": {
+     "answers": 0,
+     "with_wrong": 0,
+     "rate": 0.0
+    }
+   }
+  }
+ ],
+ "failures": [
+  {
+   "id": "failure-1",
+   "file": "real_failures/1_sonnet-5-5_memory_q57.txt",
+   "model": "claude-sonnet-5-5",
+   "model_label": "Claude Sonnet 5.5",
+   "mode": "memory",
+   "question": "What was Tesla's diluted EPS in fiscal 2025 and in fiscal 2024, and what was the percentage change? Also give net income for fiscal 2025.",
+   "answer": "Tesla's GAAP diluted EPS was $2.04 in fiscal 2024 and about $1.08 in fiscal 2025, a decline of roughly 47% (($1.08 - $2.04) / $2.04 = -47.1%). Net income attributable to common stockholders in fiscal 2025 was about $3.79 billion, down from about $7.13 billion in fiscal 2024, a drop of roughly 47%. I'm working from memory rather than the filing itself. The 2025 figures are the sum of the four reported quarterly results (EPS of $0.12, $0.33, $0.39 and $0.24, and net income of roughly $0.41 billion, $1.17 billion, $1.37 billion and $0.84 billion), so they may be off by a cent or a few million dollars. Check them against Tesla's fiscal 2025 Form 10-K before relying on them.",
+   "wrong": [
+    {
+     "text": "$7.13 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $7.091bn; the report says $7.130bn (0.5% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "47%",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give -46.50%; the report says -47.00% (0.50 percentage points too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.12",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $1.08; the report says $0.12 (88.9% too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.33",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $1.08; the report says $0.33 (69.4% too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.39",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $1.08; the report says $0.39 (63.9% too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.24",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $1.08; the report says $0.24 (77.8% too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.41 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $3.794bn; the report says $410.0m (89.2% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$1.17 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $3.794bn; the report says $1.170bn (69.2% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$1.37 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $3.794bn; the report says $1.370bn (63.9% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.84 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $3.794bn; the report says $840.0m (77.9% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    }
+   ],
+   "category": "per_share"
+  },
+  {
+   "id": "failure-2",
+   "file": "real_failures/2_haiku-5-5_memory_q27.txt",
+   "model": "claude-haiku-5-5",
+   "model_label": "Claude Haiku 5.5",
+   "mode": "memory",
+   "question": "What were Tesla's gross margin and operating margin in fiscal 2025? Give revenue, gross profit and operating income for that year as well.",
+   "answer": "I can't confirm Tesla's fiscal 2025 results from a live source, and my training data may not include the full-year figures, so please check them against Tesla's FY2025 Form 10-K or Q4 2025 earnings release. My best recollection is that FY2025 revenue was roughly $94.8 billion, with gross margin in the mid-to-high teens (around 17 percent, or gross profit near $16 billion) and operating margin in the low-to-mid single digits (around 4 to 5 percent, or operating income of roughly $4 to $5 billion). For comparison, the audited FY2024 figures I'm more confident in are revenue of $97.7 billion, gross profit of $17.5 billion (about 17.9 percent gross margin), and operating income of $7.1 billion (about 7.2 percent operating margin).",
+   "wrong": [
+    {
+     "text": "17 percent",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 18.03%; the report says 17.00% (1.03 percentage points too low).",
+     "metric": "gross_profit",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$16 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $17.094bn; the report says $16.000bn (6.4% too low).",
+     "metric": "gross_profit",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "4",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 4.59%; the report says 4.00% (0.59 percentage points too low).",
+     "metric": "operating_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$4",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000,000: the filings give $4.355bn, the report says $4.00 (a units mix-up such as millions vs billions).",
+     "metric": "operating_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$5 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $4.355bn; the report says $5.000bn (14.8% too high).",
+     "metric": "operating_income",
+     "fiscal_year": 2025
+    }
+   ],
+   "category": "margins"
+  },
+  {
+   "id": "failure-3",
+   "file": "real_failures/3_sonnet-5-5_source_q21.txt",
+   "model": "claude-sonnet-5-5",
+   "model_label": "Claude Sonnet 5.5",
+   "mode": "source",
+   "question": "What were Microsoft's gross margin and operating margin in fiscal 2025? Give revenue, gross profit and operating income for that year as well.",
+   "answer": "In fiscal 2025 (year ended June 30, 2025), Microsoft reported revenue of $281,724 million (about $281.7 billion), gross profit, which the filing labels \"gross margin,\" of $193,893 million (about $193.9 billion), and operating income of $128,528 million (about $128.5 billion). That works out to a gross margin of roughly 68.8% ($193,893 / $281,724) and an operating margin of roughly 45.6% ($128,528 / $281,724). For comparison, fiscal 2024 had a gross margin of about 69.8% ($171,008 / $245,122) and an operating margin of about 44.6% ($109,433 / $245,122), so gross margin slipped by about one percentage point while operating margin improved by about one point.",
+   "wrong": [
+    {
+     "text": "$171,008",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $171.008bn, the report says $171,008.00 (a units mix-up such as millions vs billions).",
+     "metric": "gross_profit",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "$245,122",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $245.122bn, the report says $245,122.00 (a units mix-up such as millions vs billions).",
+     "metric": "revenue",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "$109,433",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $109.433bn, the report says $109,433.00 (a units mix-up such as millions vs billions).",
+     "metric": "operating_income",
+     "fiscal_year": 2024
+    }
+   ],
+   "category": "margins"
+  },
+  {
+   "id": "failure-4",
+   "file": "real_failures/4_opus-5-5_memory_q29.txt",
+   "model": "claude-opus-5-5",
+   "model_label": "Claude Opus 5.5",
+   "mode": "memory",
+   "question": "Compare Amazon and Apple on revenue for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+   "answer": "Amazon was the larger company by revenue in fiscal 2025. It reported net sales of about $716.9 billion for fiscal 2025, which ended December 31, 2025, up roughly 11% from $638.0 billion in fiscal 2024. Apple reported revenue of $416.2 billion for fiscal 2025, which ended September 27, 2025, up about 6% from $391.0 billion in fiscal 2024. Amazon's revenue was therefore about 1.72 times Apple's, a gap of roughly $300 billion. The two fiscal years do not line up exactly, since Apple's ends in late September and Amazon's follows the calendar year. These figures are from memory of the companies' annual results, so check them against the 10-K filings before relying on them.",
+   "wrong": [
+    {
+     "text": "11%",
+     "status": "WRONG_PERIOD",
+     "reason": "11.00% is the FY2024 figure. For FY2025 the filings give 12.38%.",
+     "metric": "revenue",
+     "fiscal_year": 2025
+    }
+   ],
+   "category": "cross_company"
+  },
+  {
+   "id": "failure-5",
+   "file": "real_failures/5_opus-5-5_source_q30.txt",
+   "model": "claude-opus-5-5",
+   "model_label": "Claude Opus 5.5",
+   "mode": "source",
+   "question": "Compare NVIDIA and Tesla on net income for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+   "answer": "NVIDIA reported net income of $72.88 billion ($72,880 million) for fiscal 2025, the year ended January 26, 2025, up from $29.76 billion in fiscal 2024. Tesla reported net income of $3.855 billion ($3,855 million) for fiscal 2025, the year ended December 31, 2025, down from $7.153 billion in fiscal 2024. Of Tesla's total, $3.794 billion was attributable to common stockholders after noncontrolling interests. On those figures NVIDIA's net income is about 18.9 times Tesla's, or about 19.2 times if you use Tesla's net income attributable to common stockholders. The two fiscal years are not aligned: NVIDIA's fiscal 2025 ended in January 2025, while Tesla's ran through December 2025, so the periods overlap by only about one month.",
+   "wrong": [
+    {
+     "text": "18.9 times",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 19.21x; the report says 18.90x (1.6% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    }
+   ],
+   "category": "cross_company"
+  }
+ ],
+ "answers": [
+  {
+   "question_id": "q01",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q02",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 5,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q03",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q04",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q05",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q06",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q07",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q08",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q09",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q10",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q11",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 9,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q12",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 6,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q13",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q14",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 8,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q15",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 5,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q16",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 12,
+   "verified": 9,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q17",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 18,
+   "verified": 14,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q18",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 12,
+   "verified": 10,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q19",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 14,
+   "verified": 13,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q20",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q21",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 14,
+   "verified": 14,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q22",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 11,
+   "verified": 9,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q23",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 13,
+   "verified": 12,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q24",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 12,
+   "verified": 10,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q25",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q26",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q27",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q28",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q29",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 1,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "11%",
+     "status": "WRONG_PERIOD",
+     "reason": "11.00% is the FY2024 figure. For FY2025 the filings give 12.38%.",
+     "metric": "revenue",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q30",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 13,
+   "verified": 8,
+   "amber": 4,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "30 times",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 31.65x; the report says 30.00x (5.2% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2026
+    }
+   ]
+  },
+  {
+   "question_id": "q31",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 12,
+   "verified": 11,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q32",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q33",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q34",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q35",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q36",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q37",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q38",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q39",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q40",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 11,
+   "verified": 11,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q41",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 13,
+   "verified": 8,
+   "amber": 5,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q42",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 12,
+   "verified": 12,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q43",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 11,
+   "verified": 11,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q44",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 12,
+   "verified": 10,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q45",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 12,
+   "verified": 11,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q46",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 7,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q47",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q48",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 7,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q49",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q50",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 6,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q51",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q52",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q53",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q54",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q55",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 6,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q56",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 5,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q57",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 16,
+   "verified": 5,
+   "amber": 11,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q58",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 1,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "1,174 percent",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 1174.07%; the report says -1174.00% (2348.07 percentage points too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2023
+    }
+   ]
+  },
+  {
+   "question_id": "q59",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q60",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q01",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 6,
+   "amber": 6,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q02",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q03",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q04",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 5,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q05",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q06",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q07",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q08",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 7,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q09",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 6,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q10",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 5,
+   "amber": 6,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q11",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 7,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q12",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 10,
+   "amber": 5,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q13",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 5,
+   "amber": 6,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q14",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 8,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q15",
+   "category": "multi_year_growth",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q16",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 12,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q17",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 10,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q18",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 14,
+   "verified": 11,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q19",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 13,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q20",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 11,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q21",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 12,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q22",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 17,
+   "verified": 13,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q23",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 10,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q24",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 9,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q25",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 13,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q26",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 14,
+   "verified": 12,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q27",
+   "category": "margins",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 17,
+   "verified": 12,
+   "amber": 5,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q28",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q29",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 9,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q30",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 6,
+   "amber": 2,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "18.9 times",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 19.21x; the report says 18.90x (1.6% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q31",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q32",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q33",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q34",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 13,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q35",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q36",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q37",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 5,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q38",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q39",
+   "category": "cross_company",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q40",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 9,
+   "amber": 6,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q41",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 11,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q42",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 12,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q43",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 11,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q44",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 11,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q45",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 18,
+   "verified": 13,
+   "amber": 5,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q46",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 11,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q47",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 11,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q48",
+   "category": "fiscal_calendar",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 14,
+   "verified": 10,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q49",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 8,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q50",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 9,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q51",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 6,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q52",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 5,
+   "amber": 5,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q53",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q54",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q55",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 8,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q56",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 8,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q57",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 6,
+   "amber": 5,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q58",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q59",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q60",
+   "category": "per_share",
+   "model": "claude-opus-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q01",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q02",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 4,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q03",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 8,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$18.8 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $18.749bn; the report says $18.800bn (0.3% too high).",
+     "metric": "operating_income",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q04",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q05",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q06",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q07",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q08",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 3,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$60.92 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $29.760bn; the report says $60.920bn (104.7% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "$51.17 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $20.008bn; the report says $51.170bn (155.7% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "525%",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 205.17%; the report says 525.00% (319.83 percentage points too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "6.25 times",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 3.05x; the report says 6.25x (104.8% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q09",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 9,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q10",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q11",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 5,
+   "amber": 1,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$12.58 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $12.556bn; the report says $12.580bn (0.2% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2022
+    }
+   ]
+  },
+  {
+   "question_id": "q12",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 6,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q13",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q14",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 8,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$61.9 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $61.970bn; the report says $61.900bn (0.1% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "2,290%",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 2276.63%; the report says 2290.00% (13.37 percentage points too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q15",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 6,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q16",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 14,
+   "verified": 12,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q17",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 11,
+   "verified": 10,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q18",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 9,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q19",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 16,
+   "verified": 11,
+   "amber": 4,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$65.8 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $65.863bn; the report says $65.800bn (0.1% too low).",
+     "metric": "cost_of_revenue",
+     "fiscal_year": 2023
+    }
+   ]
+  },
+  {
+   "question_id": "q20",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q21",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q22",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 13,
+   "verified": 10,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q23",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q24",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 9,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q25",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q26",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q27",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q28",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 6,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q29",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 7,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$300.7 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $300.763bn; the report says $300.700bn (0.0% too low).",
+     "metric": "revenue",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q30",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 11,
+   "verified": 4,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$7.13 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $7.091bn; the report says $7.130bn (0.5% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "$4",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000,000: the filings give $3.794bn, the report says $4.00 (a units mix-up such as millions vs billions).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$7 billion",
+     "status": "WRONG_PERIOD",
+     "reason": "$7.000bn is the FY2024 figure. For FY2025 the filings give $3.794bn.",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "10",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 19.21x; the report says 10.00x (47.9% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "18 times",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 19.21x; the report says 18.00x (6.3% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$7.13 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $7.091bn; the report says $7.130bn (0.5% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "10.2 times",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 10.28x; the report says 10.20x (0.8% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q31",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 9,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "1.59",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 1.60x; the report says 1.59x (0.3% too low).",
+     "metric": "operating_income",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q32",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q33",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q34",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 5,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q35",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q36",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q37",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q38",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 7,
+   "amber": 2,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "6.97",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 6.91x; the report says 6.97x (0.9% too high).",
+     "metric": "rd_expense",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q39",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 5,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "5.6 times",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 7.33x; the report says 5.60x (23.6% too low).",
+     "metric": "total_assets",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q40",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 8,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q41",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q42",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q43",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q44",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q45",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 8,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q46",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q47",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q48",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 8,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "20%",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 19.50%; the report says 20.00% (0.50 percentage points too high).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q49",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q50",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q51",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q52",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 6,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q53",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q54",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q55",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 9,
+   "verified": 6,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q56",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 6,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q57",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 19,
+   "verified": 5,
+   "amber": 4,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$7.13 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $7.091bn; the report says $7.130bn (0.5% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "47%",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give -46.50%; the report says -47.00% (0.50 percentage points too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.12",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $1.08; the report says $0.12 (88.9% too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.33",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $1.08; the report says $0.33 (69.4% too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.39",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $1.08; the report says $0.39 (63.9% too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.24",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $1.08; the report says $0.24 (77.8% too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.41 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $3.794bn; the report says $410.0m (89.2% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$1.17 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $3.794bn; the report says $1.170bn (69.2% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$1.37 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $3.794bn; the report says $1.370bn (63.9% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$0.84 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $3.794bn; the report says $840.0m (77.9% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q58",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 6,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "1,170%",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 1174.07%; the report says 1170.00% (4.07 percentage points too low).",
+     "metric": "eps_diluted",
+     "fiscal_year": 2023
+    }
+   ]
+  },
+  {
+   "question_id": "q59",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q60",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q01",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q02",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q03",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q04",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 9,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q05",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q06",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q07",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q08",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 7,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q09",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 7,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q10",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q11",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 12,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q12",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 11,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q13",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q14",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "61,970",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $61.970bn, the report says $61,970.00 (a units mix-up such as millions vs billions).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "2,722",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give -$2.722bn, the report says $2,722.00 (a units mix-up such as millions vs billions).",
+     "metric": "net_income",
+     "fiscal_year": 2022
+    }
+   ]
+  },
+  {
+   "question_id": "q15",
+   "category": "multi_year_growth",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q16",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 16,
+   "verified": 12,
+   "amber": 3,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "0.5",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give -$5.136bn; the report says -$0.50 (100.0% too high).",
+     "metric": "operating_income",
+     "fiscal_year": 2023
+    }
+   ]
+  },
+  {
+   "question_id": "q17",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 14,
+   "verified": 14,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q18",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 11,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q19",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 10,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q20",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 9,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q21",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 19,
+   "verified": 10,
+   "amber": 6,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$171,008",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $171.008bn, the report says $171,008.00 (a units mix-up such as millions vs billions).",
+     "metric": "gross_profit",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "$245,122",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $245.122bn, the report says $245,122.00 (a units mix-up such as millions vs billions).",
+     "metric": "revenue",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "$109,433",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $109.433bn, the report says $109,433.00 (a units mix-up such as millions vs billions).",
+     "metric": "operating_income",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q22",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 14,
+   "verified": 12,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q23",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 12,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q24",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 10,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q25",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 13,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q26",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 19,
+   "verified": 12,
+   "amber": 7,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q27",
+   "category": "margins",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 12,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q28",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 11,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q29",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q30",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 1,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "18.9 times",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 19.21x; the report says 18.90x (1.6% too low).",
+     "metric": "net_income",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q31",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 11,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q32",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 8,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q33",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 8,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$97,690",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $97.690bn, the report says $97,690.00 (a units mix-up such as millions vs billions).",
+     "metric": "revenue",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "$60,922",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000: the filings give $60.922bn, the report says $60,922.00 (a units mix-up such as millions vs billions).",
+     "metric": "revenue",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q34",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 11,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q35",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q36",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 9,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q37",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 5,
+   "verified": 3,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q38",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 11,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q39",
+   "category": "cross_company",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q40",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 9,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q41",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 13,
+   "verified": 11,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q42",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 11,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q43",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 11,
+   "amber": 1,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q44",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 16,
+   "verified": 13,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q45",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 10,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q46",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 11,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q47",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 11,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q48",
+   "category": "fiscal_calendar",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 15,
+   "verified": 13,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q49",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 8,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q50",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 8,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q51",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 12,
+   "verified": 8,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q52",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 8,
+   "verified": 6,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q53",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 8,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q54",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 7,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q55",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 11,
+   "verified": 9,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q56",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 6,
+   "amber": 3,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q57",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 9,
+   "verified": 5,
+   "amber": 4,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q58",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 7,
+   "verified": 7,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q59",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 8,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q60",
+   "category": "per_share",
+   "model": "claude-sonnet-5-5",
+   "mode": "source",
+   "numbers": 10,
+   "verified": 8,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q01",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q02",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q03",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 3,
+   "verified": 3,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q04",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q05",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q06",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 3,
+   "verified": 3,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q07",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q08",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q09",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q10",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q11",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 10,
+   "verified": 8,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$7.13 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $7.091bn; the report says $7.130bn (0.5% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    },
+    {
+     "text": "$7,130 million",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $7.091bn; the report says $7.130bn (0.5% too high).",
+     "metric": "net_income",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q12",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 1,
+   "amber": 3,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "\u2212 $8.89B",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $8.891bn; the report says -$8.890bn (200.0% too low).",
+     "metric": "operating_income",
+     "fiscal_year": 2023
+    }
+   ]
+  },
+  {
+   "question_id": "q13",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q14",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q15",
+   "category": "multi_year_growth",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 3,
+   "verified": 3,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q16",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q17",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q18",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q19",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q20",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q21",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 6,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q22",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q23",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q24",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q25",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 4,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$17.45 billion",
+     "status": "WRONG_PERIOD",
+     "reason": "$17.450bn is the FY2024 figure. For FY2023 the filings give $17.660bn.",
+     "metric": "gross_profit",
+     "fiscal_year": 2023
+    }
+   ]
+  },
+  {
+   "question_id": "q26",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 5,
+   "verified": 5,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q27",
+   "category": "margins",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 12,
+   "verified": 7,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "17 percent",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 18.03%; the report says 17.00% (1.03 percentage points too low).",
+     "metric": "gross_profit",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$16 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $17.094bn; the report says $16.000bn (6.4% too low).",
+     "metric": "gross_profit",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "4",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 4.59%; the report says 4.00% (0.59 percentage points too low).",
+     "metric": "operating_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$4",
+     "status": "SCALE_ERROR",
+     "reason": "Off by a factor of 1,000,000,000: the filings give $4.355bn, the report says $4.00 (a units mix-up such as millions vs billions).",
+     "metric": "operating_income",
+     "fiscal_year": 2025
+    },
+    {
+     "text": "$5 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $4.355bn; the report says $5.000bn (14.8% too high).",
+     "metric": "operating_income",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q28",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 8,
+   "verified": 8,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q29",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 7,
+   "verified": 2,
+   "amber": 4,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$713 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $716.924bn; the report says $713.000bn (0.5% too low).",
+     "metric": "revenue",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q30",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 4,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q31",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 3,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "1.59",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 1.60x; the report says 1.59x (0.3% too low).",
+     "metric": "operating_income",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q32",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 6,
+   "verified": 4,
+   "amber": 2,
+   "status": "INCOMPLETE",
+   "wrong": []
+  },
+  {
+   "question_id": "q33",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 3,
+   "verified": 3,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q34",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 4,
+   "verified": 3,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "6%",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give 1.06x; the report says 6.00x (464.2% too high).",
+     "metric": "rd_expense",
+     "fiscal_year": 2025
+    }
+   ]
+  },
+  {
+   "question_id": "q35",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 3,
+   "verified": 3,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  },
+  {
+   "question_id": "q37",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 3,
+   "verified": 2,
+   "amber": 0,
+   "status": "REJECTED",
+   "wrong": [
+    {
+     "text": "$78.5 billion",
+     "status": "WRONG_VALUE",
+     "reason": "The filings give $78.779bn; the report says $78.500bn (0.4% too low).",
+     "metric": "cash",
+     "fiscal_year": 2024
+    }
+   ]
+  },
+  {
+   "question_id": "q38",
+   "category": "cross_company",
+   "model": "claude-haiku-5-5",
+   "mode": "memory",
+   "numbers": 3,
+   "verified": 3,
+   "amber": 0,
+   "status": "CERTIFIED",
+   "wrong": []
+  }
+ ]
+}

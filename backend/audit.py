@@ -279,7 +279,7 @@ def replay_certificate(certificate: dict, store: FactStore, log: AuditLog, text:
         try:
             claim = Claim.model_validate(check["claim"])
             verdict = check_claim(claim, store, value=check["value"], quantum=check.get("quantum"),
-                                  token_unit=check.get("token_unit"), policy=policy)
+                                  token_unit=check.get("token_unit"), bound=check.get("bound"), policy=policy)
         except Exception as exc:  # a malformed certificate is a failed replay, not a crash
             mismatches.append({"index": position, "error": f"could not replay: {type(exc).__name__}"})
             continue

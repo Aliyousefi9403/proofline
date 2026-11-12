@@ -162,6 +162,8 @@ def main(argv: list[str]) -> int:
     for model in models:
         for mode in MODES:
             subset = [r for r in rows if r["model"] == model and r["mode"] == mode["id"]]
+            if not subset:
+                continue
             table.append({
                 "model": model, "model_label": MODEL_LABELS.get(model, model), "mode": mode["id"],
                 "mode_label": mode["label"], **summarise(subset),
@@ -206,7 +208,8 @@ def main(argv: list[str]) -> int:
         "scorer_model": llm.default_model(),
         "provider": llm.provider(),
         "questions": len(questions),
-        "models": [{"id": m, "label": MODEL_LABELS.get(m, m)} for m in models],
+        "models": [{"id": m, "label": MODEL_LABELS.get(m, m)} for m in models if any(r["model"] == m for r in rows)],
+        "models_pending": [MODEL_LABELS.get(m, m) for m in models if not any(r["model"] == m for r in rows)],
         "modes": list(MODES),
         "categories": CATEGORIES,
         "failed_runs": failed,

@@ -9,7 +9,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from . import fmt
-from .edgar import METRICS, PUBLIC_METRICS, Fact, FactStore
+from .edgar import METRIC_VARIANTS, METRICS, PUBLIC_METRICS, Fact, FactStore
 from .models import Claim, Status, TokenRef, Verdict
 
 PCT_KINDS = ("growth_pct", "margin_pct", "cagr_pct")
@@ -17,6 +17,7 @@ PER_SHARE_METRICS = ("eps_diluted", "eps_basic", "shares_outstanding")
 SCALE_FACTORS = (1e3, 1e6, 1e9, 1e12)
 SPLIT_FACTORS = (2, 3, 4, 5, 6, 7, 8, 10, 15, 20, 25, 30, 40, 50)
 PERIOD_SEARCH_RADIUS = 5
+BOUND_MAX_RATIO = 3.0  # "more than $100bn" is accepted for $120bn, not for $120tn
 
 
 @dataclass(frozen=True)
@@ -282,6 +283,16 @@ def _display_unit(claim: Claim) -> str:
     return claim.unit
 
 
+def _bound_holds(claimed: float, actual: float, bound: str) -> bool:
+    """Is "more than X" / "less than X" true of the filed figure, and of the same order of magnitude?"""
+    if claimed == 0 or actual == 0 or (claimed > 0) != (actual > 0):
+        return False
+    a, c = abs(actual), abs(claimed)
+    if max(a, c) / min(a, c) >= BOUND_MAX_RATIO:
+        return False
+    return a >= c if bound == "lower" else a <= c
+
+
 def _unit_conflict(kind: str, token_unit: str | None) -> str | None:
     if token_unit is None:
         return None
@@ -329,6 +340,7 @@ def check_claim(
     quantum: float | None = None,
     token: TokenRef | None = None,
     token_unit: str | None = None,
+    bound: str | None = None,
     policy: Policy = DEFAULT_POLICY,
 ) -> Verdict:
     """Check one claim against the filings.
@@ -382,6 +394,27 @@ def check_claim(
     if matches(claimed, computed.value, quantum, kind, policy):
         reason = "Matches the filed figure." if kind == "absolute" else "Matches the figure computed from the filings."
         return _verdict(Status.VERIFIED, claim, claimed, unit, reason, computed=working, **base)
+
+    if bound in ("lower", "upper") and _bound_holds(claimed, computed.value, bound):
+        wording = "at least" if bound == "lower" else "at most"
+        reason = (
+            f"The report states a bound ({wording} {fmt.display(claimed, unit)}). "
+            f"The filings give {fmt.display(computed.value, unit)}, which satisfies it."
+        )
+        return _verdict(Status.VERIFIED, claim, claimed, unit, reason, computed=working, flags=["bound"], **base)
+
+    for variant in METRIC_VARIANTS.get(claim.metric, ()):
+        alternative = compute(store, claim.model_copy(update={"metric": variant}), ticker, year, compare_year)
+        if isinstance(alternative, Computed) and matches(claimed, alternative.value, quantum, kind, policy):
+            reason = (
+                f"Matches {_label(variant).lower()}, as the filing's income statement shows it. "
+                f"On the {_label(claim.metric).lower()} attributable to shareholders basis the figure is "
+                f"{fmt.display(computed.value, unit)}."
+            )
+            shown = Computed(alternative.value, alternative.unit, alternative.sources,
+                             f"{alternative.calculation}\nReport says {fmt.display(claimed, unit)}; {tolerance}.")
+            return _verdict(Status.VERIFIED, claim, claimed, unit, reason, computed=shown,
+                            flags=["alternative_definition"], **base)
 
     if kind == "absolute":
         fact = computed.sources[0]

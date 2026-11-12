@@ -67,6 +67,8 @@ METRICS: dict[str, MetricSpec] = {
             "SalesRevenueNet",
             "RevenueFromContractWithCustomerIncludingAssessedTax")),
         MetricSpec("net_income", "Net income", "USD", False, _gaap("NetIncomeLoss", "ProfitLoss")),
+        MetricSpec("net_income_total", "Net income including noncontrolling interests", "USD", False,
+                   _gaap("ProfitLoss"), public=False),
         MetricSpec("cost_of_revenue", "Cost of revenue", "USD", False, _gaap(
             "CostOfRevenue", "CostOfGoodsAndServicesSold", "CostOfGoodsSold")),
         MetricSpec("gross_profit", "Gross profit", "USD", False, _gaap("GrossProfit"),
@@ -94,6 +96,10 @@ METRICS: dict[str, MetricSpec] = {
 }
 
 PUBLIC_METRICS: tuple[str, ...] = tuple(k for k, m in METRICS.items() if m.public)
+
+# Some lines have two legitimate readings. A claim that matches either is accepted, and the
+# verdict says which one it matched.
+METRIC_VARIANTS: dict[str, tuple[str, ...]] = {"net_income": ("net_income_total",)}
 
 # Friendly names used to resolve a company mention to a ticker.
 COMPANY_ALIASES: dict[str, tuple[str, ...]] = {

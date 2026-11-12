@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T21:10:30Z",
+ "generated_at": "2026-11-12T10:11:06Z",
  "model": "claude-opus-5-5",
  "provider": "claude-cli",
  "analyses": 40,
@@ -91,7 +91,7 @@
  "timing": {
   "reports_timed": 158,
   "avg_extract_ms": 10998.6,
-  "avg_check_ms": 4.887,
+  "avg_check_ms": 5.192,
   "avg_numbers_per_report": 15.2
  },
  "misses": [

@@ -222,3 +222,25 @@ def test_checking_modules_never_import_an_llm_client(module):
             imported.add((node.module or "").split(".")[0])
             imported.update(alias.name for alias in node.names)
     assert not imported & {"anthropic", "openai", "llm", "extract", "naive", "subprocess"}
+
+
+def test_net_income_including_noncontrolling_interests_is_accepted(store, make_claim):
+    # Tesla's income statement shows $7,153m; attributable to common stockholders is $7,091m.
+    total = run(store, make_claim(company="TSLA", metric="net_income", value=7.153e9), 1e6)
+    assert total.status is Status.VERIFIED and "alternative_definition" in total.flags
+    assert "noncontrolling" in total.reason and "$7.091bn" in total.reason
+    assert run(store, make_claim(company="TSLA", metric="net_income", value=7.091e9), 1e6).flags == []
+    change = run(store, make_claim(company="TSLA", metric="net_income", kind="change_abs", compare_year=2022, value=-5.434e9), 1e6)
+    assert change.status is Status.VERIFIED
+    assert run(store, make_claim(company="TSLA", metric="net_income", value=7.3e9), 1e8).status is Status.WRONG_VALUE
+
+
+def test_stated_bounds(store, make_claim):
+    nvda = dict(company="NVDA", metric="net_income", fiscal_year=2026)
+    over = run(store, make_claim(**nvda, value=100e9), 1e9, bound="lower")
+    assert over.status is Status.VERIFIED and over.flags == ["bound"] and "at least" in over.reason
+    assert run(store, make_claim(**nvda, value=100e9), 1e9).status is Status.WRONG_VALUE
+    assert run(store, make_claim(**nvda, value=150e9), 1e9, bound="lower").status is Status.WRONG_VALUE
+    assert run(store, make_claim(**nvda, value=150e9), 1e9, bound="upper").status is Status.VERIFIED
+    assert run(store, make_claim(**nvda, value=100e6), 1e6, bound="lower").status is not Status.VERIFIED  # wrong magnitude
+    assert run(store, make_claim(**nvda, value=-100e9), 1e9, bound="lower").status is Status.WRONG_VALUE

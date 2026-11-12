@@ -32,6 +32,8 @@ export const FLAG_LABEL = {
   llm_value_overridden: "Extractor value overridden",
   as_originally_filed: "As originally filed",
   possible_split_adjustment: "Possible split adjustment",
+  bound: "Stated as a bound",
+  alternative_definition: "Second accepted definition",
 };
 
 export function formatValue(value, unit) {

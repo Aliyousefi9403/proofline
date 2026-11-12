@@ -6,7 +6,7 @@ from dataclasses import asdict, dataclass
 
 from . import audit, llm
 from .check import DEFAULT_POLICY, Policy, check_claim
-from .coverage import Binding, bind_claims, bind_trusting, unchecked_tokens
+from .coverage import Binding, bind_claims, bind_trusting, bound_before, unchecked_tokens
 from .edgar import FactStore
 from .extract import Extraction, extract_claims
 from .heuristic import extract_rules
@@ -19,6 +19,8 @@ ENGINE_VERSION = "proofline-1.0.0"
 FLAG_NOTES = {
     "llm_value_overridden": "The extractor reported a different number than the text shows. ProofLine used the number in the text.",
     "as_originally_filed": "Matches the figure as first filed; a later filing restated it.",
+    "bound": "The report gives a bound (more than, less than), not an exact figure.",
+    "alternative_definition": "Matches a second accepted definition of this line.",
     "possible_split_adjustment": "Looks like a stock-split adjustment that the filings on record do not apply.",
 }
 
@@ -105,10 +107,13 @@ def verify_report(
     claims = list(extraction.claims)
     binding: Binding = bind_claims(clean, claims, tokens) if defences.bind else bind_trusting(clean, claims, tokens)
     verdicts = []
+    limits: dict[int, str | None] = {}
     for bound in binding.bound:
+        limit = bound_before(clean, bound.token.start) if (bound.token and defences.bind) else None
+        limits[id(bound)] = limit
         verdict = check_claim(
             bound.claim, store, value=bound.value, quantum=bound.quantum, token=bound.token_ref(),
-            token_unit=bound.token.unit if (bound.token and defences.bind) else None, policy=policy,
+            token_unit=bound.token.unit if (bound.token and defences.bind) else None, bound=limit, policy=policy,
         )
         if bound.flags:
             verdict = verdict.model_copy(update={"flags": [*verdict.flags, *bound.flags]})
@@ -132,6 +137,7 @@ def verify_report(
             "quantum": bound.quantum,
             "token": bound.token_ref().model_dump() if bound.token else None,
             "token_unit": bound.token.unit if bound.token else None,
+            "bound": limits[id(bound)],
             "status": verdict.status.value,
             "expected": verdict.expected,
             "accessions": list(dict.fromkeys(s["accn"] for s in verdict.sources)),

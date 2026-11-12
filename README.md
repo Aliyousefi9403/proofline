@@ -147,11 +147,36 @@ With no attack the naive checker flagged 20 of 20 wrong numbers. With the "skip"
 
 ### Evaluation
 
-Not run yet.
+40 LLM-written analyses of real figures, 160 copies with one injected error each.
+
+| Injected error | Copies | ProofLine caught | Right diagnosis | Naive LLM caught |
+|---|---:|---:|---:|---:|
+| Value changed by 5 to 30% | 40 | 100.0% | 95.0% | 100.0% |
+| Figure from the wrong year | 40 | 97.5% | 97.5% | 100.0% |
+| Millions swapped with billions | 40 | 100.0% | 100.0% | 100.0% |
+| Growth rate changed | 40 | 100.0% | 95.0% | 100.0% |
+| **All** | 160 | **99.4%** | | 100.0% |
+
+- False alarms: 0 red flags on 2,880 untouched figures (0.00%).
+- Could not check (amber): 0.0% of untouched figures.
+- Untouched analyses fully certified: 40 of 40.
+- Naive checker flagged 2 of 40 untouched analyses as inaccurate.
+- Time per report: checking 5.2 ms in code; the one LLM read averages 11.0 s. About 15.2 figures per analysis.
+- Injected errors that passed as verified: 0. Failed runs: 0.
 
 ### Model leaderboard
 
-Not run yet: `uv run python eval/leaderboard.py`.
+60 questions, 3 models, two modes. Every answer scored by ProofLine.
+
+| Model | Mode | Answers with a wrong number | Wrong value | Wrong period | Scale error | Fully certified |
+|---|---|---:|---:|---:|---:|---:|
+| Claude Opus 5.5 | From memory | 5.0% (3/60) | 2 | 1 | 0 | 33/60 |
+| Claude Opus 5.5 | 10-K supplied | 1.7% (1/60) | 1 | 0 | 0 | 17/60 |
+| Claude Sonnet 5.5 | From memory | 21.7% (13/60) | 30 | 1 | 1 | 26/60 |
+| Claude Sonnet 5.5 | 10-K supplied | 8.3% (5/60) | 2 | 0 | 7 | 20/60 |
+| Claude Haiku 5.5 | From memory | 21.6% (8/37) | 11 | 1 | 1 | 28/37 |
+
+The 5 worst real answers are in `samples/real_failures/`. Failed runs: 83.
 <!-- results:end -->
 
 ## Demo script (about 4 minutes)

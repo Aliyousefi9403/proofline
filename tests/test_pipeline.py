@@ -265,3 +265,12 @@ def test_certificate_survives_a_browser_round_trip(store, log):
     replay = replay_certificate(from_browser, store, log, CLEAN)
     assert replay["valid"] and replay["signature_valid"] and replay["certificate_id_valid"]
     assert audit.portable({"a": 391000000000.0, "b": [6.08, True, None]}) == audit.portable({"a": 391000000000, "b": [6.08, True, None]})
+
+
+def test_bound_is_read_from_the_text_and_replayed(store, log):
+    text = "NVIDIA's net income was well over $100 billion in fiscal 2026."
+    claims = canned({"span": "$100 billion", "company": "NVDA", "metric": "net_income", "fiscal_year": 2026, "value": 100e9})
+    result = verify_report(text, store, extraction=claims, log=log)
+    assert result["verdicts"][0]["status"] == "VERIFIED" and result["verdicts"][0]["flags"] == ["bound"]
+    assert result["certificate"]["body"]["checks"][0]["bound"] == "lower"
+    assert replay_certificate(result["certificate"], store, log, text)["valid"]

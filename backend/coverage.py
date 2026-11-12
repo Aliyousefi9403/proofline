@@ -6,12 +6,31 @@ a prompt injection that makes the extractor skip, merge or misreport a number.
 """
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 
 from .models import Claim, TokenRef, Unchecked
 from .numparse import NumToken
 
 VALUE_MATCH_RELATIVE = 1e-6
+_LOWER_BOUND_RE = re.compile(
+    r"(?:\bover|\babove|\bmore\s+than|\bat\s+least|\bnorth\s+of|\bexceed(?:ed|ing|s)?|\btopp(?:ed|ing)|\bupwards?\s+of)\s+$",
+    re.IGNORECASE,
+)
+_UPPER_BOUND_RE = re.compile(
+    r"(?:\bunder|\bbelow|\bless\s+than|\bat\s+most|\bsouth\s+of|\bjust\s+shy\s+of|\bshort\s+of)\s+$", re.IGNORECASE
+)
+BOUND_LOOKBACK = 24
+
+
+def bound_before(text: str, start: int) -> str | None:
+    """'lower' for "more than $100bn", 'upper' for "under $100bn", else None."""
+    lead = text[max(0, start - BOUND_LOOKBACK):start]
+    if _LOWER_BOUND_RE.search(lead):
+        return "lower"
+    if _UPPER_BOUND_RE.search(lead):
+        return "upper"
+    return None
 
 
 @dataclass(frozen=True)

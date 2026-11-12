@@ -1,1 +1,202 @@
-[]
+[
+ {
+  "id": "failure-1",
+  "file": "real_failures/1_sonnet-5-5_memory_q57.txt",
+  "model": "claude-sonnet-5-5",
+  "model_label": "Claude Sonnet 5.5",
+  "mode": "memory",
+  "question": "What was Tesla's diluted EPS in fiscal 2025 and in fiscal 2024, and what was the percentage change? Also give net income for fiscal 2025.",
+  "answer": "Tesla's GAAP diluted EPS was $2.04 in fiscal 2024 and about $1.08 in fiscal 2025, a decline of roughly 47% (($1.08 - $2.04) / $2.04 = -47.1%). Net income attributable to common stockholders in fiscal 2025 was about $3.79 billion, down from about $7.13 billion in fiscal 2024, a drop of roughly 47%. I'm working from memory rather than the filing itself. The 2025 figures are the sum of the four reported quarterly results (EPS of $0.12, $0.33, $0.39 and $0.24, and net income of roughly $0.41 billion, $1.17 billion, $1.37 billion and $0.84 billion), so they may be off by a cent or a few million dollars. Check them against Tesla's fiscal 2025 Form 10-K before relying on them.",
+  "wrong": [
+   {
+    "text": "$7.13 billion",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $7.091bn; the report says $7.130bn (0.5% too high).",
+    "metric": "net_income",
+    "fiscal_year": 2024
+   },
+   {
+    "text": "47%",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give -46.50%; the report says -47.00% (0.50 percentage points too low).",
+    "metric": "net_income",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$0.12",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $1.08; the report says $0.12 (88.9% too low).",
+    "metric": "eps_diluted",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$0.33",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $1.08; the report says $0.33 (69.4% too low).",
+    "metric": "eps_diluted",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$0.39",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $1.08; the report says $0.39 (63.9% too low).",
+    "metric": "eps_diluted",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$0.24",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $1.08; the report says $0.24 (77.8% too low).",
+    "metric": "eps_diluted",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$0.41 billion",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $3.794bn; the report says $410.0m (89.2% too low).",
+    "metric": "net_income",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$1.17 billion",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $3.794bn; the report says $1.170bn (69.2% too low).",
+    "metric": "net_income",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$1.37 billion",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $3.794bn; the report says $1.370bn (63.9% too low).",
+    "metric": "net_income",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$0.84 billion",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $3.794bn; the report says $840.0m (77.9% too low).",
+    "metric": "net_income",
+    "fiscal_year": 2025
+   }
+  ],
+  "category": "per_share"
+ },
+ {
+  "id": "failure-2",
+  "file": "real_failures/2_haiku-5-5_memory_q27.txt",
+  "model": "claude-haiku-5-5",
+  "model_label": "Claude Haiku 5.5",
+  "mode": "memory",
+  "question": "What were Tesla's gross margin and operating margin in fiscal 2025? Give revenue, gross profit and operating income for that year as well.",
+  "answer": "I can't confirm Tesla's fiscal 2025 results from a live source, and my training data may not include the full-year figures, so please check them against Tesla's FY2025 Form 10-K or Q4 2025 earnings release. My best recollection is that FY2025 revenue was roughly $94.8 billion, with gross margin in the mid-to-high teens (around 17 percent, or gross profit near $16 billion) and operating margin in the low-to-mid single digits (around 4 to 5 percent, or operating income of roughly $4 to $5 billion). For comparison, the audited FY2024 figures I'm more confident in are revenue of $97.7 billion, gross profit of $17.5 billion (about 17.9 percent gross margin), and operating income of $7.1 billion (about 7.2 percent operating margin).",
+  "wrong": [
+   {
+    "text": "17 percent",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give 18.03%; the report says 17.00% (1.03 percentage points too low).",
+    "metric": "gross_profit",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$16 billion",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $17.094bn; the report says $16.000bn (6.4% too low).",
+    "metric": "gross_profit",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "4",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give 4.59%; the report says 4.00% (0.59 percentage points too low).",
+    "metric": "operating_income",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$4",
+    "status": "SCALE_ERROR",
+    "reason": "Off by a factor of 1,000,000,000: the filings give $4.355bn, the report says $4.00 (a units mix-up such as millions vs billions).",
+    "metric": "operating_income",
+    "fiscal_year": 2025
+   },
+   {
+    "text": "$5 billion",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give $4.355bn; the report says $5.000bn (14.8% too high).",
+    "metric": "operating_income",
+    "fiscal_year": 2025
+   }
+  ],
+  "category": "margins"
+ },
+ {
+  "id": "failure-3",
+  "file": "real_failures/3_sonnet-5-5_source_q21.txt",
+  "model": "claude-sonnet-5-5",
+  "model_label": "Claude Sonnet 5.5",
+  "mode": "source",
+  "question": "What were Microsoft's gross margin and operating margin in fiscal 2025? Give revenue, gross profit and operating income for that year as well.",
+  "answer": "In fiscal 2025 (year ended June 30, 2025), Microsoft reported revenue of $281,724 million (about $281.7 billion), gross profit, which the filing labels \"gross margin,\" of $193,893 million (about $193.9 billion), and operating income of $128,528 million (about $128.5 billion). That works out to a gross margin of roughly 68.8% ($193,893 / $281,724) and an operating margin of roughly 45.6% ($128,528 / $281,724). For comparison, fiscal 2024 had a gross margin of about 69.8% ($171,008 / $245,122) and an operating margin of about 44.6% ($109,433 / $245,122), so gross margin slipped by about one percentage point while operating margin improved by about one point.",
+  "wrong": [
+   {
+    "text": "$171,008",
+    "status": "SCALE_ERROR",
+    "reason": "Off by a factor of 1,000,000: the filings give $171.008bn, the report says $171,008.00 (a units mix-up such as millions vs billions).",
+    "metric": "gross_profit",
+    "fiscal_year": 2024
+   },
+   {
+    "text": "$245,122",
+    "status": "SCALE_ERROR",
+    "reason": "Off by a factor of 1,000,000: the filings give $245.122bn, the report says $245,122.00 (a units mix-up such as millions vs billions).",
+    "metric": "revenue",
+    "fiscal_year": 2024
+   },
+   {
+    "text": "$109,433",
+    "status": "SCALE_ERROR",
+    "reason": "Off by a factor of 1,000,000: the filings give $109.433bn, the report says $109,433.00 (a units mix-up such as millions vs billions).",
+    "metric": "operating_income",
+    "fiscal_year": 2024
+   }
+  ],
+  "category": "margins"
+ },
+ {
+  "id": "failure-4",
+  "file": "real_failures/4_opus-5-5_memory_q29.txt",
+  "model": "claude-opus-5-5",
+  "model_label": "Claude Opus 5.5",
+  "mode": "memory",
+  "question": "Compare Amazon and Apple on revenue for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+  "answer": "Amazon was the larger company by revenue in fiscal 2025. It reported net sales of about $716.9 billion for fiscal 2025, which ended December 31, 2025, up roughly 11% from $638.0 billion in fiscal 2024. Apple reported revenue of $416.2 billion for fiscal 2025, which ended September 27, 2025, up about 6% from $391.0 billion in fiscal 2024. Amazon's revenue was therefore about 1.72 times Apple's, a gap of roughly $300 billion. The two fiscal years do not line up exactly, since Apple's ends in late September and Amazon's follows the calendar year. These figures are from memory of the companies' annual results, so check them against the 10-K filings before relying on them.",
+  "wrong": [
+   {
+    "text": "11%",
+    "status": "WRONG_PERIOD",
+    "reason": "11.00% is the FY2024 figure. For FY2025 the filings give 12.38%.",
+    "metric": "revenue",
+    "fiscal_year": 2025
+   }
+  ],
+  "category": "cross_company"
+ },
+ {
+  "id": "failure-5",
+  "file": "real_failures/5_opus-5-5_source_q30.txt",
+  "model": "claude-opus-5-5",
+  "model_label": "Claude Opus 5.5",
+  "mode": "source",
+  "question": "Compare NVIDIA and Tesla on net income for fiscal 2025. Give both figures and say how many times larger the bigger one is.",
+  "answer": "NVIDIA reported net income of $72.88 billion ($72,880 million) for fiscal 2025, the year ended January 26, 2025, up from $29.76 billion in fiscal 2024. Tesla reported net income of $3.855 billion ($3,855 million) for fiscal 2025, the year ended December 31, 2025, down from $7.153 billion in fiscal 2024. Of Tesla's total, $3.794 billion was attributable to common stockholders after noncontrolling interests. On those figures NVIDIA's net income is about 18.9 times Tesla's, or about 19.2 times if you use Tesla's net income attributable to common stockholders. The two fiscal years are not aligned: NVIDIA's fiscal 2025 ended in January 2025, while Tesla's ran through December 2025, so the periods overlap by only about one month.",
+  "wrong": [
+   {
+    "text": "18.9 times",
+    "status": "WRONG_VALUE",
+    "reason": "The filings give 19.21x; the report says 18.90x (1.6% too low).",
+    "metric": "net_income",
+    "fiscal_year": 2025
+   }
+  ],
+  "category": "cross_company"
+ }
+]
